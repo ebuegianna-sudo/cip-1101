@@ -5,19 +5,31 @@
     <title>Blog 2</title>
     <link rel="stylesheet" href="style.css" />
     <style>
-      body {
-        background-color: #f7f7f7;
-        margin: 0;
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
+      /* RESET AND BASE STYLES */
+      * {
+        box-sizing: border-box;
       }
 
-      /* Header */
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        min-height: 100vh;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f7f7f7;
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* HEADER */
       .header {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 15px 40px;
+        width: 100%;
       }
       .header a {
         margin-left: 15px;
@@ -26,17 +38,23 @@
         font-weight: bold;
       }
 
+      /* HORIZONTAL RULE */
       hr {
-        border: 0;
-        height: 3px;
+        border: none;
+        height: 5px;
         background-color: #e1cead;
+        width: 100%;
+        display: block;
+        flex-shrink: 0;
       }
 
-      /* Content container */
+      /* MAIN CONTENT */
       .content {
         max-width: 900px;
+        width: 100%;
         margin: 40px auto;
         padding: 0 20px;
+        flex: 1; /* pushes footer down */
       }
 
       h1,
@@ -49,7 +67,7 @@
         margin-bottom: 20px;
       }
 
-      /* Image + caption */
+      /* IMAGES & LAYOUT */
       .img-right,
       .img-left {
         width: 250px;
@@ -59,7 +77,6 @@
       .img-right {
         float: right;
       }
-
       .img-left {
         float: left;
       }
@@ -71,14 +88,13 @@
         margin-bottom: 20px;
       }
 
-      /* Clear floats after image + paragraph */
       .clearfix::after {
         content: "";
         display: table;
         clear: both;
       }
 
-      /* Blog navigation links */
+      /* BLOG NAVIGATION LINKS */
       .blog-links a {
         display: inline-block;
         margin-right: 15px;
@@ -87,35 +103,53 @@
         font-weight: bold;
       }
 
-      /* Footer */
+      /* FOOTER */
       footer {
         background-color: #e1cead;
-        color: black;
         text-align: center;
         padding: 20px 0;
         margin-top: 40px;
+        width: 100%;
       }
+
       footer a {
         color: black;
         text-decoration: none;
         margin: 0 10px;
+      }
+
+      /* BACK TO TOP BUTTON */
+      .back-to-top {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e1cead;
+        border-radius: 5px;
+        padding: 10px 20px;
+        display: inline-block;
       }
     </style>
   </head>
 
   <body>
     <!-- HEADER -->
-    <div class="header">
-      <img
-        src="PennyWrinkleLogo.png"
-        height="30"
-      />
+    <header id="top" class="header">
+      <a href="images/index/PennyWrinkleLogo.png" target="_blank">
+        <img
+          src="images/index/PennyWrinkleLogo.png"
+          alt="Logo"
+          title="Penny Wrinkle Logo PNG"
+          height="50"
+        />
+      </a>
       <div>
         <a href="index.html">Home</a>
         <a href="contact.html">Contact</a>
         <a href="biography.html">About Me</a>
+        <a href="#pages">Pages</a>
+        <a href="photogallery.html">Gallery</a>
       </div>
-    </div>
+    </header>
 
     <hr />
 
@@ -123,23 +157,24 @@
     <div class="content">
       <h1>Why Guitars Have Good Parenting Skills</h1>
       <h4>Written By: <b>Penny Wrinkle</b></h4>
-      <h4>Date: 02/03/2026</h4>
+      <h4>Date: <b>02/03/2026</b></h4>
 
-      <br />
-      <br />
+      <br /><br />
       <img
-        src="4-guitar-drawing-1.png"
+        src="images/blog2/guitarBG.png"
         alt="Guitar Image"
+        title="Guitar PNG"
         style="width: 250px; margin-left: 40%; margin-right: 50%"
       />
-      <br />
-      <br />
+      <br /><br />
+
       <h3>An Unexpected Pillar of Strength</h3>
       <div class="clearfix">
         <img
-          src="students.jpg"
+          src="images/blog2/students.jpg"
           class="img-right"
           alt="Student Struggles"
+          title="Students PNG"
         />
         <p>
           Burnout is an inevitable part of being a student—unless one is somehow
@@ -161,19 +196,24 @@
       </div>
 
       <br />
-      <br />
-
       <div style="text-align: center; margin: 20px 0">
         <img
-          src="border.png"
+          src="images/index/border.png"
           alt="Border"
-          width="500px"
+          title="Border PNG"
+          width="600px;"
         />
       </div>
+      <br />
 
       <h3>An Object As A Lifelong Companion</h3>
       <div class="clearfix">
-        <img src="guitar.jpg" class="img-left" alt="Guitar" />
+        <img
+          src="images/blog2/guitar.jpg"
+          class="img-left"
+          alt="Guitar"
+          title="Guitar PNG"
+        />
         <p>
           Let me begin by saying, for some reason, my grandmother cherished my
           hands. When I was a little younger than I was, my grandmother would
@@ -202,19 +242,24 @@
       </div>
 
       <br />
-      <br />
-
       <div style="text-align: center; margin: 20px 0">
         <img
-          src="border.png"
+          src="images/index/border.png"
           alt="Border"
-          width="500px"
+          title="Border PNG"
+          width="600px;"
         />
       </div>
+      <br />
 
       <h3>Pain As The Counterpart of Passion</h3>
       <div class="clearfix">
-        <img src="passion.webp" class="img-right" alt="Passion" />
+        <img
+          src="images/blog2/passion.webp"
+          class="img-right"
+          alt="Passion"
+          title="Passion PNG"
+        />
         <p>
           Even if guitar is seen as a creative hobby, it subtly teaches you
           about life—that
@@ -237,11 +282,19 @@
       </div>
 
       <!-- Blog navigation links -->
-      <div class="blog-links" style="text-align: center; margin: 40px 0">
+      <div
+        class="blog-links"
+        id="pages"
+        style="text-align: center; margin: 40px 0;"
+      >
         <h3>Navigate:</h3>
         <a href="index.html">Home</a>
         <a href="blog1.html">Blog 1</a>
         <a href="blog3.html">Blog 3</a>
+      </div>
+
+      <div style="text-align: center; margin: 30px 0;">
+        <a href="#top" class="back-to-top">Go back to the top</a>
       </div>
     </div>
 
@@ -249,12 +302,9 @@
     <footer>
       <p>&copy; 2026 Penny Wrinkler. All Rights Reserved.</p>
       <p>
-        <a href="index.html">Home</a> |
-        <a href="contact.html">Contact</a> |
+        <a href="index.html">Home</a> | <a href="contact.html">Contact</a> |
         <a href="biography.html">About Me</a>
       </p>
     </footer>
   </body>
 </html>
-
-
