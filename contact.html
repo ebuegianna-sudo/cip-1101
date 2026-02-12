@@ -1,6 +1,7 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Contact Me - Penny Wrinkler</title>
     <link rel="stylesheet" href="style.css" />
     <style>
@@ -11,39 +12,49 @@
         line-height: 1.6;
       }
 
-      /* HEADER */
+      /* Header */
       .header {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 15px 40px;
       }
-
       .header a {
+        margin-left: 15px;
         text-decoration: none;
         color: black;
         font-weight: bold;
-        margin: 0 10px;
       }
 
       hr {
-        border: none;
-        height: 3px;
+        border: 0;
+        height: 5px;
         background-color: #e1cead;
       }
 
-      /* Contact Form Box */
+      /* Content container */
+      .content {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 0 20px;
+      }
+
+      h1,
+      h3,
+      h4 {
+        margin: 20px 0 10px;
+      }
+
+      p {
+        margin-bottom: 20px;
+      }
+
+      /* Contact box */
       .contact-box {
         background-color: #e1cead;
         padding: 30px;
-        margin: 40px auto;
-        max-width: 600px;
         border-radius: 10px;
         text-align: center;
-      }
-
-      .contact-box h2 {
-        margin-top: 0;
       }
 
       .contact-box textarea {
@@ -70,20 +81,15 @@
       }
 
       /* Blog navigation links */
-      .blog-links {
-        text-align: center;
-        margin: 40px 0;
-      }
-
       .blog-links a {
         display: inline-block;
-        margin: 0 15px;
+        margin-right: 15px;
         text-decoration: none;
-        color: black;
+        color: #000;
         font-weight: bold;
       }
 
-      /* FOOTER */
+      /* Footer */
       footer {
         background-color: #e1cead;
         color: black;
@@ -91,61 +97,85 @@
         padding: 20px 0;
         margin-top: 40px;
       }
-
       footer a {
         color: black;
         text-decoration: none;
         margin: 0 10px;
+      }
+
+      /* Back to top */
+      .back-to-top {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e1cead;
+        border-radius: 5px;
+        padding: 10px 20px;
+        display: inline-block;
+      }
+
+      .back-to-top:hover {
+        text-decoration: underline;
       }
     </style>
   </head>
 
   <body>
     <!-- HEADER -->
-    <div class="header">
+    <header id="top" class="header">
       <img
-        src="PennyWrinkleLogo.png"
-        height="30"
+        src="images/index/PennyWrinkleLogo.png"
+        title="Penny Wrinkle Logo"
+        height="50"
       />
       <div>
         <a href="index.html">Home</a>
         <a href="contact.html">Contact</a>
         <a href="biography.html">About Me</a>
+        <a href="#pages">Pages</a>
+        <a href="photogallery.html">Gallery</a>
       </div>
-    </div>
+    </header>
 
     <hr />
 
-    <!-- CONTACT FORM -->
-    <div class="contact-box">
-      <h2>Get In Touch</h2>
-      <p>Have something to say? Send me a message below!</p>
-      <form>
-        <textarea placeholder="Write your message here..." rows="6"></textarea>
-        <br />
-        <button type="submit">Send</button>
-      </form>
-    </div>
+    <!-- CONTENT -->
+    <div class="content">
+      <h1>Get In Touch</h1>
+      <div class="contact-box">
+        <p>Have something to say? Send me a message below!</p>
+        <form>
+          <textarea
+            placeholder="Write your message here..."
+            rows="6"
+          ></textarea>
+          <br />
+          <button type="submit">Send</button>
+        </form>
+      </div>
 
-    <!-- NAVIGATION LINKS -->
-    <div class="blog-links">
-      <h3>Navigate:</h3>
-      <a href="index.html">Home</a>
-      <a href="blog1.html">Blog 1</a>
-      <a href="blog2.html">Blog 2</a>
-      <a href="blog3.html">Blog 3</a>
+      <!-- Blog navigation links -->
+      <div class="blog-links" style="text-align: center; margin: 40px 0">
+        <h3>Navigate:</h3>
+        <a href="index.html">Home</a>
+        <a href="blog1.html">Blog 1</a>
+        <a href="blog2.html">Blog 2</a>
+        <a href="blog3.html">Blog 3</a>
+      </div>
+
+      <!-- Back to top -->
+      <div style="text-align: center">
+        <a href="#top" class="back-to-top">Go back to the top</a>
+      </div>
     </div>
 
     <!-- FOOTER -->
     <footer>
       <p>&copy; 2026 Penny Wrinkler. All Rights Reserved.</p>
       <p>
-        <a href="index.html">Home</a> |
-        <a href="contact.html">Contact</a> |
+        <a href="index.html">Home</a> | <a href="contact.html">Contact</a> |
         <a href="biography.html">About Me</a>
       </p>
     </footer>
   </body>
 </html>
-
-
