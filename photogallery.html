@@ -1,0 +1,521 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      body {
+        background-color: #f7f7f7;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+
+      /* HEADER */
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 40px;
+      }
+
+      .header a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        margin-left: 15px;
+      }
+
+      /* FLEX GALLERY ROW */
+      .blog-cards-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin: 30px 0;
+        flex-wrap: nowrap;
+      }
+
+      .blog-card {
+        width: 260px;
+        background-color: white;
+        border: 1px solid #e1cead;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .blog-card img {
+        width: 220px;
+      }
+
+      /* DIVIDER IMAGE */
+      .divider {
+        margin: 30px 0;
+      }
+
+      /* NAV LINKS */
+      .blog-links a {
+        display: inline-block;
+        margin: 0 10px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+      }
+
+      /* BACK TO TOP */
+      .back-to-top {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e1cead;
+        border-radius: 5px;
+        padding: 10px 20px;
+        display: inline-block;
+        margin: 20px 0;
+      }
+
+      footer {
+        background-color: #e1cead;
+        padding: 20px 0;
+        margin-top: 40px;
+      }
+
+      footer a {
+        color: black;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- TOP ANCHOR -->
+    <div id="top"></div>
+
+    <!-- HEADER -->
+    <div class="header">
+      <img src="images/index/PennyWrinkleLogo.png" height="50" alt="Logo" />
+
+      <div>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="biography.html">About Me</a>
+        <a href="#pages">Pages</a>
+        <a href="photogallery.html">Gallery</a>
+      </div>
+    </div>
+
+    <hr color="#E1CEAD" size="5" />
+
+    <br />
+    <br />
+    <h1>Photo Gallery</h1>
+    <h4>Where pieces make a whole.</h4>
+
+    <div class="divider">
+      <img src="images/index/border.png" width="600" alt="Divider" />
+    </div>
+
+    <!-- SECTION 1 -->
+    <a href="index.html"><h2>Soul Pen Landing Page</h2></a>
+
+    <div class="blog-cards-container">
+      <div class="blog-card">
+        <a href="images/index/numbers.webp" target="_blank">
+          <img src="images/index/numbers.webp" alt="Binary" />
+        </a>
+        <h3>Binary</h3>
+      </div>
+
+      <div class="blog-card">
+        <a href="images/index/music.jpg" target="_blank">
+          <img src="images/index/music.jpg" alt="Music" />
+        </a>
+        <h3>Music</h3>
+      </div>
+
+      <div class="blog-card">
+        <a href="images/index/scientist.jpg" target="_blank">
+          <img src="images/index/scientist.jpg" alt="Scientist" />
+        </a>
+        <h3>Scientist</h3>
+      </div>
+    </div>
+
+    <div class="divider">
+      <img src="images/index/border.png" width="600" alt="Divider" />
+    </div>
+
+    <!-- SECTION 2 -->
+    <a href="blog1.html"
+      ><h2>Blog 1: The Uncomfortable Truth About Programming</h2></a
+    >
+
+    <div class="blog-cards-container">
+      <div class="blog-card">
+        <a href="images/blog1/gear.jpg" target="_blank">
+          <img src="images/blog1/gear.jpg" alt="Gear" />
+        </a>
+        <h3>Gear</h3>
+      </div>
+
+      <div class="blog-card">
+        <a href="images/blog1/Laptop.png" target="_blank">
+          <img src="images/blog1/Laptop.png" alt="Laptop" />
+        </a>
+        <h3>Laptop</h3>
+      </div>
+
+      <div class="blog-card">
+        <a href="images/blog1/program.jpg" target="_blank">
+          <img src="images/blog1/program.jpg" alt="Programming" />
+        </a>
+        <h3>Programming</h3>
+      </div>
+
+      <div class="blog-card">
+        <a href="images/blog1/time.jpg" target="_blank">
+          <img src="images/blog1/time.jpg" alt="Time" />
+        </a>
+        <h3>Time</h3>
+      </div>
+    </div>
+
+    <div class="divider">
+      <img src="images/index/border.png" width="600" alt="Divider" />
+    </div>
+
+    <a href="blog2.html" target="_blank"
+      ><h2>Blog 2: Why Guitar Has Good Parenting Skills</h2></a
+    >
+    <h4>What are the things that keep you going?</h4>
+
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin: 30px 0;
+        flex-wrap: wrap;
+      "
+    >
+      <div
+        style="
+          width: 260px;
+          background-color: white;
+          border: 1px solid #e1cead;
+          padding: 20px;
+          text-align: center;
+        "
+      >
+        <a href="blog1.html" target="_blank">
+          <img src="images/blog2/guitar.jpg" alt="Guitar Image" width="220" />
+          <h3>Guitar</h3>
+        </a>
+      </div>
+
+      <div
+        style="
+          width: 260px;
+          background-color: white;
+          border: 1px solid #e1cead;
+          padding: 20px;
+          text-align: center;
+        "
+      >
+        <a href="blog2.html" target="_blank">
+          <img
+            src="images/blog2/guitarBG.png"
+            alt="Guitar Background"
+            width="220"
+          />
+          <h3>Guitar Background</h3>
+        </a>
+      </div>
+
+      <div
+        style="
+          width: 260px;
+          background-color: white;
+          border: 1px solid #e1cead;
+          padding: 20px;
+          text-align: center;
+        "
+      >
+        <a href="blog3.html" target="_blank">
+          <img
+            src="images/blog2/passion.webp"
+            alt="Passion Image"
+            width="220"
+          />
+          <h3>Passion</h3>
+        </a>
+      </div>
+
+      <div
+        style="
+          width: 260px;
+          background-color: white;
+          border: 1px solid #e1cead;
+          padding: 20px;
+          text-align: center;
+        "
+      >
+        <a href="blog3.html" target="_blank">
+          <img
+            src="images/blog2/students.jpg"
+            alt="Students Image"
+            width="220"
+          />
+          <h3>Life of a Student</h3>
+        </a>
+      </div>
+    </div>
+
+    <br />
+
+    <div style="text-align: center; margin: 20px 0">
+      <img src="images/index/border.png" alt="Border" width="600" />
+    </div>
+
+    <br />
+
+    <!-- BLOG 3 SECTION -->
+    <a href="blog3.html" target="_blank"
+      ><h2>Blog 3: Why Technology is More Human Than We Think</h2></a
+    >
+    <h4>Where are you now currently in your life?</h4>
+
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin: 30px 0;
+        flex-wrap: wrap;
+      "
+    >
+      <div
+        style="
+          width: 260px;
+          background-color: white;
+          border: 1px solid #e1cead;
+          padding: 20px;
+          text-align: center;
+        "
+      >
+        <a href="blog1.html" target="_blank">
+          <img src="images/blog3/sheldon.jpg" alt="Sheldon Image" width="220" />
+          <h3>Sheldon Cooper</h3>
+        </a>
+      </div>
+
+      <div
+        style="
+          width: 260px;
+          background-color: white;
+          border: 1px solid #e1cead;
+          padding: 20px;
+          text-align: center;
+        "
+      >
+        <a href="blog2.html" target="_blank">
+          <img src="images/blog3/telescopes.png" alt="Telescopes" width="220" />
+          <h3>Telescopes</h3>
+        </a>
+      </div>
+
+      <div
+        style="
+          width: 260px;
+          background-color: white;
+          border: 1px solid #e1cead;
+          padding: 20px;
+          text-align: center;
+        "
+      >
+        <a href="blog3.html" target="_blank">
+          <img src="images/blog3/woman.jpg" alt="Woman Image" width="220" />
+          <h3>Lady</h3>
+        </a>
+      </div>
+
+      <div
+        style="
+          width: 260px;
+          background-color: white;
+          border: 1px solid #e1cead;
+          padding: 20px;
+          text-align: center;
+        "
+      >
+        <a href="blog3.html" target="_blank">
+          <img
+            src="images/blog3/praying.avif"
+            alt="Praying Image"
+            width="220"
+          />
+          <h3>Prayer</h3>
+        </a>
+      </div>
+    </div>
+
+    <br />
+
+    <div style="text-align: center; margin: 20px 0">
+      <img src="images/index/border.png" alt="Border" width="600" />
+    </div>
+
+    <br />
+
+    <!-- ABOUT ME SECTION -->
+    <a href="about.html" target="_blank"><h2>About Me</h2></a>
+    <h4>Just a snippet.</h4>
+
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin: 30px 0;
+        flex-wrap: wrap;
+      "
+    >
+      <div
+        style="
+          width: 260px;
+          background-color: white;
+          border: 1px solid #e1cead;
+          padding: 20px;
+          text-align: center;
+        "
+      >
+        <a href="blog1.html" target="_blank">
+          <img
+            src="images/about me/nostalgia.jpg"
+            alt="Nostalgia"
+            width="220"
+          />
+          <h3>Nostalgia</h3>
+        </a>
+      </div>
+
+      <div
+        style="
+          width: 260px;
+          background-color: white;
+          border: 1px solid #e1cead;
+          padding: 20px;
+          text-align: center;
+        "
+      >
+        <a href="blog2.html" target="_blank">
+          <img
+            src="images/about me/childhood.jpg"
+            alt="Childhood Years"
+            width="220"
+          />
+          <h3>Childhood Years</h3>
+        </a>
+      </div>
+
+      <div
+        style="
+          width: 260px;
+          background-color: white;
+          border: 1px solid #e1cead;
+          padding: 20px;
+          text-align: center;
+        "
+      >
+        <a href="blog3.html" target="_blank">
+          <img
+            src="images/about me/teenage.jpg"
+            alt="Teenage Years"
+            width="220"
+          />
+          <h3>Teenage Years</h3>
+        </a>
+      </div>
+
+      <div
+        style="
+          width: 260px;
+          background-color: white;
+          border: 1px solid #e1cead;
+          padding: 20px;
+          text-align: center;
+        "
+      >
+        <a href="blog3.html" target="_blank">
+          <img
+            src="images/about me/college.jpg"
+            alt="College Years"
+            width="220"
+          />
+          <h3>College Years</h3>
+        </a>
+      </div>
+    </div>
+
+    <div class="divider">
+      <img src="images/index/border.png" width="600" alt="Divider" />
+    </div>
+
+    <!-- SECTION 3 -->
+    <h2>Favorite Things</h2>
+
+    <div class="blog-cards-container">
+      <div class="blog-card">
+        <a href="images/favorites/smart dogs.jpg" target="_blank">
+          <img src="images/favorites/smart dogs.jpg" alt="Smart Dogs" />
+        </a>
+        <h3>Smart Dogs</h3>
+      </div>
+
+      <div class="blog-card">
+        <a href="images/favorites/guitaring.jpg" target="_blank">
+          <img src="images/favorites/guitaring.jpg" alt="Guitar" />
+        </a>
+        <h3>Guitar</h3>
+      </div>
+
+      <div class="blog-card">
+        <a href="images/favorites/piano.jpg" target="_blank">
+          <img src="images/favorites/piano.jpg" alt="Piano" />
+        </a>
+        <h3>Piano</h3>
+      </div>
+
+      <div class="blog-card">
+        <a href="images/favorites/lovedOnes.jpg" target="_blank">
+          <img src="images/favorites/lovedOnes.jpg" alt="Loved Ones" />
+        </a>
+        <h3>Loved Ones</h3>
+      </div>
+    </div>
+
+    <div class="divider">
+      <img src="images/index/border.png" width="600" alt="Divider" />
+    </div>
+
+    <!-- NAVIGATION -->
+    <div class="blog-links" id="pages">
+      <h3>Navigate:</h3>
+      <a href="index.html">Home</a>
+      <a href="blog1.html">Blog 1</a>
+      <a href="blog2.html">Blog 2</a>
+      <a href="blog3.html">Blog 3</a>
+    </div>
+
+    <a href="#top" class="back-to-top">Go back to the top</a>
+
+    <footer>
+      <p>&copy; 2026 Penny Wrinkler. All Rights Reserved.</p>
+      <p>
+        <a href="index.html">Home</a> | <a href="contact.html">Contact</a> |
+        <a href="biography.html">About Me</a>
+      </p>
+    </footer>
+  </body>
+</html>
