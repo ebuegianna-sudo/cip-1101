@@ -2,23 +2,40 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Blog 2</title>
+    <title>Blog 1</title>
     <link rel="stylesheet" href="style.css" />
     <style>
-      body {
-        background-color: #f7f7f7;
+      /* RESET AND BASE */
+      * {
+        box-sizing: border-box;
         margin: 0;
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
+        padding: 0;
       }
 
-      /* Header */
+      html,
+      body {
+        height: 100%;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f7f7f7;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      /* HEADER */
       .header {
         display: flex;
-        align-items: center;
         justify-content: space-between;
+        align-items: center;
         padding: 15px 40px;
+        background-color: #fff;
+        width: 100%;
       }
+
       .header a {
         margin-left: 15px;
         text-decoration: none;
@@ -26,15 +43,21 @@
         font-weight: bold;
       }
 
+      /* HORIZONTAL RULE */
       hr {
-        border: 0;
-        height: 3px;
+        border: none;
+        height: 5px;
         background-color: #e1cead;
+        width: 100%;
+        display: block;
+        flex-shrink: 0;
       }
 
-      /* Content container */
+      /* CONTENT */
       .content {
+        flex: 1;
         max-width: 900px;
+        width: 100%;
         margin: 40px auto;
         padding: 0 20px;
       }
@@ -49,19 +72,23 @@
         margin-bottom: 20px;
       }
 
-      /* Image + caption */
-      .img-right,
+      /* IMAGE ALIGNMENTS */
       .img-left {
+        float: left;
+        margin: 0 20px 20px 0;
         width: 250px;
-        margin: 10px 20px;
       }
 
       .img-right {
         float: right;
+        margin: 0 0 20px 20px;
+        width: 250px;
       }
 
-      .img-left {
-        float: left;
+      .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
       }
 
       .caption {
@@ -71,101 +98,128 @@
         margin-bottom: 20px;
       }
 
-      /* Clear floats after image + paragraph */
-      .clearfix::after {
-        content: "";
-        display: table;
-        clear: both;
+      /* NAVIGATION LINKS */
+      .blog-links {
+        text-align: center;
+        margin: 40px 0;
       }
 
-      /* Blog navigation links */
       .blog-links a {
         display: inline-block;
-        margin-right: 15px;
+        margin: 0 10px;
         text-decoration: none;
         color: #000;
         font-weight: bold;
       }
 
-      /* Footer */
+      /* BACK TO TOP BUTTON */
+      .back-to-top {
+        display: inline-block;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e1cead;
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin: 20px 0;
+      }
+
+      /* FOOTER */
       footer {
         background-color: #e1cead;
-        color: black;
         text-align: center;
         padding: 20px 0;
-        margin-top: 40px;
+        width: 100%;
+        margin-top: auto; /* Stick footer at bottom */
       }
+
       footer a {
         color: black;
         text-decoration: none;
         margin: 0 10px;
+      }
+
+      /* CENTER IMAGES IN CONTENT */
+      .center-img {
+        display: block;
+        margin: 0 auto 20px auto;
+        max-width: 100%;
       }
     </style>
   </head>
 
   <body>
     <!-- HEADER -->
-    <div class="header">
+    <header id="top" class="header">
+      <a href="images/index/PennyWrinkleLogo.png" target="_blank">
       <img
-        src="PennyWrinkleLogo.png"
-        height="30"
+        src="images/index/PennyWrinkleLogo.png"
+        alt="Penny Wrinkle Logo"
+        title="Penny Wrinkle Logo PNG"
+        height="50"
       />
+      </a>
       <div>
         <a href="index.html">Home</a>
         <a href="contact.html">Contact</a>
         <a href="biography.html">About Me</a>
+        <a href="#pages">Pages</a>
+        <a href="photogallery.html">Gallery</a>
       </div>
-    </div>
+    </header>
 
     <hr />
 
-    <!-- CONTENT -->
+    <!-- MAIN CONTENT -->
     <div class="content">
       <h1>The Uncomfortable Truth About Programming</h1>
       <h4>Written By: <b>Penny Wrinkle</b></h4>
-      <h4>Date: 02/03/2026</h4>
+      <h4>Date: <b>02/03/2026</b></h4>
+      <a href="images/blog1/Laptop.png" target="_blank">
+      <img src="images/blog1/Laptop.png" alt="Laptop" title="Laptop PNG" class="center-img" />
+      </a>
 
-      <br />
-      <br />
-      <img
-        src="Laptop.png"
-        alt="Laptop Image"
-        style="width: 250px; margin-left: 40%; margin-right: 50%"
-      />
-      <br />
-      <br />
       <h3>Practicality Over Passion?</h3>
       <div class="clearfix">
-        <img src="gear.jpg" class="img-right" alt="" />
+        <a href="images/blog1/gear.jpg" target="_blank">
+        <img src="images/blog1/gear.jpg" class="img-right" alt="Gear Image" />
+        </a>
         <p>
           People view programming in many ways. To some, it is a niche hobby. To
           others, it is a tool used to earn money aside from solving problems.
           However, programming is not just about building softwares. And being a
-          programmer yourself is not just about being able to code. <b>Doing it is
-          difficult and many overlook the reason why before choosing that path
-          because it is admittedly one of the most practical things you can do
-          in today’s society<b> having technology as one of its biggest
-          backbones. This blog will uncover the layers of what it truly takes to
-          be a real programmer.
+          programmer yourself is not just about being able to code.
+          <strong
+            >Doing it is difficult and many overlook the reason why before
+            choosing that path because it is admittedly one of the most
+            practical things you can do in today’s society</strong
+          >
+          having technology as one of its biggest backbones. This blog will
+          uncover the layers of what it truly takes to be a real programmer.
         </p>
       </div>
 
-      <br />
-      <br />
-
-      <div style="text-align: center; margin: 20px 0">
-        <img
-          src="border.png"
-          alt="Border"
-          width="500px"
-        />
-      </div>
+      <img
+        src="images/index/border.png"
+        alt="Border"
+        title="Border PNG"
+        class="center-img"
+        width="600"
+      />
 
       <h3>Coding vs Typing</h3>
       <div class="clearfix">
-        <img src="Basic-drawing-program.jpg" class="img-left" alt="" />
+        <a href="images/blog1/program.jpg" target="_blank">
+        <img
+          src="images/blog1/program.jpg"
+          class="img-left"
+          alt="Programming Image"
+          title="Programming JPG"
+        />
+        </a>
         <p>
-          <b>Programmer 1 codes to learn, and Programmer 2 codes to write code</b>,
+          <b
+            <b>Programmer 1 codes to learn, and Programmer 2 codes to write code</b>,
           however both know how to code. Truly, there are a lot of code
           templates online in which people can paste anytime and anywhere. This
           does not automatically diminish learning. Let college be our scenery
@@ -173,8 +227,8 @@
           those with beginner-level knowledge, and on top of that, they have to
           adjust themselves to strict time constraints school is setting for
           them. With a setting like this, copying and pasting can be resourceful
-          at first, but when that becomes a habit, learners might not realize
-          that they are slowly carving a path that leads to nothing.
+          at first, but when that becomes a habit, <b>learners might not realize
+          that they are slowly carving a path that leads to nothing</b>.
           Requirements may have been passed but there was no real learning
           there. <b>Real programming takes time</b>. It requires showing up frequently,
           exploring more, trying different things, solving small problems at
@@ -195,21 +249,22 @@
         </p>
       </div>
 
-      <br />
-      <br />
-      <div style="text-align: center; margin: 20px 0">
-        <img
-          src="border.png"
-          alt="Border"
-          width="500px"
-        />
-      </div>
+      <img
+        src="images/index/border.png"
+        alt="Border"
+        title="Border PNG"
+        class="center-img"
+        width="600"
+      />
 
       <h3>What Mastery Really Means</h3>
       <div class="clearfix">
-        <img src="time.jpg" class="img-right" alt="Time Image" />
+        <a href="images/blog1/time.jpg" target="_blank">
+        <img src="images/blog1/time.jpg" class="img-right" alt="Time Image" title="Time JPG"/>
+        </a>
         <p>
-          <b>Programming requires real commitment</b>. You don’t have to solve every
+          
+         <b>Programming requires real commitment</b>. You don’t have to solve every
           arithmetic problem in the world successfully, nor does your progress
           have to be speedy. <b>It is about showing up and developing your passion
           and willingness to learn it despite knowing that it is not the easiest
@@ -218,16 +273,20 @@
           and that you have become the type of programmer that is able to help
           everyone through the means of technology. Whether you are a student or
           an independent learner from home, <b>programming is possible and is a
-          challenge that can be overcome as long as real work is present</b>.
-        </p>
+          challenge that can be overcome as long as real work is present</b>.</p>
       </div>
 
-      <!-- Blog navigation links -->
-      <div class="blog-links" style="text-align: center; margin: 40px 0">
+      <!-- PAGES NAVIGATION -->
+      <div class="blog-links" id="pages">
         <h3>Navigate:</h3>
         <a href="index.html">Home</a>
-        <a href="blog1.html">Blog 1</a>
         <a href="blog2.html">Blog 2</a>
+        <a href="blog3.html">Blog 3</a>
+      </div>
+
+      <!-- BACK TO TOP BUTTON -->
+      <div style="text-align: center">
+        <a href="#top" class="back-to-top">Go back to the top</a>
       </div>
     </div>
 
@@ -235,12 +294,9 @@
     <footer>
       <p>&copy; 2026 Penny Wrinkler. All Rights Reserved.</p>
       <p>
-        <a href="index.html">Home</a> |
-        <a href="contact.html">Contact</a> |
+        <a href="index.html">Home</a> | <a href="contact.html">Contact</a> |
         <a href="biography.html">About Me</a>
       </p>
     </footer>
   </body>
 </html>
-
-
