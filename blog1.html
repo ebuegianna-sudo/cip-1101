@@ -124,6 +124,19 @@
         margin: 20px 0;
       }
 
+      .back-to-top-essay {
+        display: block;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e1cead;
+        border-radius: 5px;
+        padding: 10px 20px;
+        width: fit-content;
+        margin: 20px auto;
+      }
+
+
       /* FOOTER */
       footer {
         background-color: #e1cead;
@@ -145,13 +158,67 @@
         margin: 0 auto 20px auto;
         max-width: 100%;
       }
+
+      .categories {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+      }
+
+      .categories a {
+        text-decoration: none;
+        color: black;
+      }
+
+      /* TEST */
+      .jump-to-bottom {
+        display: inline-block;
+        margin: 20px 0;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e1cead;
+        border-radius: 5px;
+        padding: 10px 20px;
+      }
+
+      .back-to-top-blog {
+        display: inline-block;
+        margin: 20px 0;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e1cead;
+        border-radius: 5px;
+        padding: 10px 20px;
+
+      }
+
+      .jump-to-bottom { 
+        display: inline-block;
+        margin: 20px 0;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e1cead;
+        border-radius: 5px;
+        padding: 10px 20px;
+      }
+
+      .button-row {
+        display: flex;
+        justify-content: space-between; /* one left, one right */
+        align-items: center; /* same vertical level */
+        margin: 20px 0;
+      }
+
     </style>
   </head>
 
   <body>
     <!-- HEADER -->
     <header id="top" class="header">
-      <a href="images/index/PennyWrinkleLogo.png">
+      <a href="images/index/PennyWrinkleLogo.png" target="_self">
       <img
         src="images/index/PennyWrinkleLogo.png"
         alt="Penny Wrinkle Logo"
@@ -164,7 +231,9 @@
         <a href="contact.html">Contact</a>
         <a href="biography.html">About Me</a>
         <a href="#pages">Pages</a>
+        <a href="index.html#pages">Blogs</a>
         <a href="photogallery.html">Gallery</a>
+        <a href="media.html">Media</a>
       </div>
     </header>
 
@@ -175,13 +244,25 @@
       <h1>The Uncomfortable Truth About Programming</h1>
       <h4>Written By: <b>Penny Wrinkle</b></h4>
       <h4>Date: <b>02/03/2026</b></h4>
-      <a href="images/blog1/Laptop.png">
+      <a href="images/blog1/Laptop.png" target="_self">
       <img src="images/blog1/Laptop.png" alt="Laptop" title="Laptop PNG" class="center-img" />
       </a>
 
-      <h3>Practicality Over Passion?</h3>
+      <!--TEST-->
+      <h2>Categories:</h2>
+      <div class="categories">
+      <a href="#part1"><h3>Part 1</h3></a>
+      <a href="#part2"><h3>Part 2</h3></a>
+      <a href="#part3"><h3>Part 3</h3></a>
+    </div>
+    <br />
+    <a href="#bottom" class="back-to-top-essay">Jump to the Bottom</a>
+    <br />
+    <nr></nr>
+<br>
+      <h3 id="part1">Practicality Over Passion?</h3>
       <div class="clearfix">
-        <a href="images/blog1/gear.jpg">
+        <a href="images/blog1/gear.jpg" target="_self">
         <img src="images/blog1/gear.jpg" class="img-right" alt="Gear Image" />
         </a>
         <p>
@@ -198,6 +279,11 @@
           uncover the layers of what it truly takes to be a real programmer.
         </p>
       </div>
+      <div class="button-row">
+        <a href="#bottom" class="jump-to-bottom">Go to Bottom</a>
+        <a href="#top" class="back-to-top-blog">Go Back to Top</a>
+      </div>
+      <br>
 
       <img
         src="images/index/border.png"
@@ -207,9 +293,9 @@
         width="600"
       />
 
-      <h3>Coding vs Typing</h3>
+      <h3 id="part2">Coding vs Typing</h3>
       <div class="clearfix">
-        <a href="images/blog1/program.jpg">
+        <a href="images/blog1/program.jpg" target="_self">
         <img
           src="images/blog1/program.jpg"
           class="img-left"
@@ -248,6 +334,11 @@
           pretty much anything.
         </p>
       </div>
+      <div class="button-row">
+        <a href="#bottom" class="jump-to-bottom">Go to Bottom</a>
+        <a href="#top" class="back-to-top-blog">Go Back to Top</a>
+      </div>
+      <br>
 
       <img
         src="images/index/border.png"
@@ -257,9 +348,9 @@
         width="600"
       />
 
-      <h3>What Mastery Really Means</h3>
+      <h3 id="part3">What Mastery Really Means</h3>
       <div class="clearfix">
-        <a href="images/blog1/time.jpg">
+        <a href="images/blog1/time.jpg" target="_self">
         <img src="images/blog1/time.jpg" class="img-right" alt="Time Image" title="Time JPG"/>
         </a>
         <p>
@@ -278,10 +369,11 @@
 
       <!-- PAGES NAVIGATION -->
       <div class="blog-links" id="pages">
-        <h3>Navigate:</h3>
+        <h3 id="bottom">Navigate:</h3>
         <a href="index.html">Home</a>
         <a href="blog2.html">Blog 2</a>
         <a href="blog3.html">Blog 3</a>
+        <a href="media.html">Media</a>
       </div>
 
       <!-- BACK TO TOP BUTTON -->
@@ -300,4 +392,3 @@
     </footer>
   </body>
 </html>
-
