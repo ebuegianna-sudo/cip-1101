@@ -181,13 +181,55 @@
         margin: 0 8px;
         font-weight: bold;
       }
+
+      /* TEST */
+
+      .jump-to-bottom {
+        display: inline-block;
+        margin: 20px 0;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e1cead;
+        border-radius: 5px;
+        padding: 10px 20px;
+      }
+
+      .back-to-top-blog {
+        display: inline-block;
+        margin: 20px 0;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e1cead;
+        border-radius: 5px;
+        padding: 10px 20px;
+      }
+
+      .jump-to-bottom {
+        display: inline-block;
+        margin: 20px 0;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e1cead;
+        border-radius: 5px;
+        padding: 10px 20px;
+      }
+
+      .button-row {
+        display: flex;
+        justify-content: space-between; /* one left, one right */
+        align-items: center; /* same vertical level */
+        margin: 20px 0;
+      }
     </style>
   </head>
 
   <body>
     <!-- HEADER -->
     <header id="top" class="header">
-      <a href="images/index/PennyWrinkleLogo.png">
+      <a href="images/index/PennyWrinkleLogo.png" target="_self">
         <img
           src="images/index/PennyWrinkleLogo.png"
           alt="Penny Wrinkle Logo"
@@ -197,9 +239,11 @@
       <div>
         <a href="index.html">Home</a>
         <a href="contact.html">Contact</a>
-        <a href="biography.html">About Me</a>&nbsp;
+        <a href="biography.html">About Me</a>
         <a href="#pages">Pages</a>
+        <a href="index.html#pages">Blogs</a>
         <a href="photogallery.html">Gallery</a>
+        <a href="media.html">Media</a>
       </div>
     </header>
 
@@ -218,7 +262,7 @@
 
       <br />
       <!-- TOP CENTER IMAGE -->
-      <a href="images/about me/nostalgia.jpg">
+      <a href="images/about me/nostalgia.jpg" target="_self">
         <img
           src="images/about me/nostalgia.jpg"
           alt="Nostalgia Image"
@@ -284,8 +328,14 @@
           >.
         </p>
       </div>
-      <div style="text-align: center">
+      <!--<div style="text-align: center">
         <a href="#top" class="back-to-top">Go back to the top</a>
+      </div>-->
+
+      <!--TEST-->
+      <div class="button-row">
+        <a href="#bottom" class="jump-to-bottom">Go to Bottom</a>
+        <a href="#top" class="back-to-top-blog">Go Back to Top</a>
       </div>
 
       <br />
@@ -302,7 +352,7 @@
       <!-- TEENAGE -->
       <h2 id="teenage">Teenage</h2>
       <div class="clearfix">
-        <a href="images/about me/teenage.jpg">
+        <a href="images/about me/teenage.jpg" target="_self">
           <img
             src="images/about me/teenage.jpg"
             alt="Teenage Years"
@@ -356,8 +406,9 @@
           as long as I live.
         </p>
       </div>
-      <div style="text-align: center">
-        <a href="#top" class="back-to-top">Go back to the top</a>
+      <div class="button-row">
+        <a href="#bottom" class="jump-to-bottom">Go to Bottom</a>
+        <a href="#top" class="back-to-top-blog">Go Back to Top</a>
       </div>
 
       <br />
@@ -374,7 +425,7 @@
       <!-- COLLEGE -->
       <h2 id="college">College</h2>
       <div class="clearfix">
-        <a href="images/about me/college.jpg">
+        <a href="images/about me/college.jpg" target="_self">
           <img
             src="images/about me/college.jpg"
             alt="College Years"
@@ -440,8 +491,9 @@
         <a href="blog1.html">Blog 1</a>
         <a href="blog2.html">Blog 2</a>
         <a href="blog3.html">Blog 3</a>
+        <a href="media.html">Media</a>
       </div>
-      
+
       <div style="text-align: center">
         <a href="#top" class="back-to-top">Go back to the top</a>
       </div>
@@ -459,5 +511,3 @@
     </footer>
   </body>
 </html>
-
-
