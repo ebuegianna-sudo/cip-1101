@@ -1,0 +1,723 @@
+<!doctype html>
+<html>
+  <head>
+    <title>My Music</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background-color: #f7f7f7;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+
+      /* HEADER */
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 40px;
+      }
+
+      .header a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        margin-left: 15px;
+      }
+
+      hr {
+        border: 0;
+        height: 5px;
+        background-color: #e1cead;
+      }
+
+      /* CATEGORIES */
+      .categories h3 {
+        display: inline-block;
+        margin: 0 15px;
+        cursor: pointer;
+        color: black;
+      }
+
+      /* SONG CARDS */
+      .song-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin: 20px 20px;
+      }
+
+      .song {
+        display: flex;
+        gap: 20px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        border: 1px solid #e1cead;
+        align-items: flex-start;
+        text-align: left;
+
+        max-width: 900px; /* <-- Add this */
+        margin: 0 auto; /* <-- Center the card */
+      }
+
+      .song img {
+        width: 220px;
+        height: auto;
+        border-radius: 5px;
+        flex-shrink: 0;
+      }
+
+      .song-content {
+        flex: 1;
+      }
+
+      .song-content h3 {
+        margin-top: 0;
+      }
+
+      .song-content p {
+        margin: 10px 0;
+      }
+
+      .song-content a {
+        display: inline-block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: black;
+        background-color: #e1cead;
+        padding: 8px 15px;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+
+      .back-to-top {
+        display: inline-block;
+        margin: 20px 0;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e1cead;
+        border-radius: 5px;
+        padding: 10px 20px;
+      }
+
+      .jump-to-bottom {
+        display: inline-block;
+        margin: 20px 0;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e1cead;
+        border-radius: 5px;
+        padding: 10px 20px;
+      }
+
+      .back-to-top-song {
+        display: inline-block;
+        margin: 20px 0;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e1cead;
+        border-radius: 5px;
+        padding: 10px 20px;
+
+        /* Add these two lines */
+        margin-left: 630px; /* keep your positioning */
+        margin-right: 60px;
+      }
+
+      .jump-to-bottom {
+        display: inline-block;
+        margin: 20px 0;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e1cead;
+        border-radius: 5px;
+        padding: 10px 20px;
+
+        margin-left: 60px;
+      }
+
+      footer {
+        background-color: #e1cead;
+        padding: 20px 0;
+        margin-top: 40px;
+      }
+
+      footer a {
+        color: black;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+
+      h1,
+      h2 {
+        margin-top: 40px;
+      }
+
+      .center-img {
+        display: block;
+        margin: 0 auto 20px auto;
+        max-width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="top"></div>
+
+    <!-- HEADER -->
+    <div class="header">
+      <a href="index.html">
+        <img
+          src="images/index/PennyWrinkleLogo.png"
+          height="50"
+          alt="Penny Wrinkle Logo"
+          title="Penny Wrinkle Logo"
+        />
+      </a>
+
+      <div>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="biography.html">About Me</a>
+        <a href="#pages">Pages</a>
+        <a href="index.html#pages">Blogs</a>
+        <a href="photogallery.html">Gallery</a>
+        <a href="media.html">Media</a>
+      </div>
+    </div>
+
+    <hr />
+
+    <h1>My World of Music</h1>
+    <a href="images/music/sab.webp" target="_self">
+      <img
+        src="images/music/sab.webp"
+        alt="Vinyl"
+        title="Vinyl"
+        class="center-img"
+        style="width: 250px"
+      />
+    </a>
+
+    <!-- Categories -->
+    <div class="categories">
+      <h2>Categories:</h2>
+      <a href="#jazz"><h3>Jazz</h3></a>
+      <a href="#pop"><h3>Pop</h3></a>
+      <a href="#kpop"><h3>K-Pop</h3></a>
+      <a href="#rnb"><h3>R&B</h3></a>
+      <a href="#opm"><h3>OPM</h3></a>
+    </div>
+    <br />
+    <br />
+    <a href="#bottom" class="back-to-top">Jump to the Bottom</a>
+    <br />
+    <nr></nr>
+    <!-- JAZZ -->
+    <h2 id="jazz">Jazz</h2>
+    <div class="song-container">
+      <div class="song">
+        <a href="images/music/jazz/atLast.png" target="_self">
+          <img
+            src="images/music/jazz/atLast.png"
+            alt="At Last by Etta James"
+            title="At Last by Etta James"
+          />
+        </a>
+        <div class="song-content">
+          <h3>At Last</h3>
+          <p>
+            <b>Artist:</b> Etta James was a legendary American singer who
+            bridged the gap between rhythm and blues, soul, and jazz. Her deep,
+            earthy voice earned her six Grammy Awards and a permanent place in
+            the Rock and Roll Hall of Fame.
+          </p>
+          <p>
+            <b>About the Song:</b> This 1960 soul-jazz ballad serves as the
+            ultimate anthem for finally finding a soulmate after a long period
+            of longing. It is globally recognized for its lush orchestral
+            arrangement and Etta’s iconic, emotive vocal delivery.
+          </p>
+          <a href="https://youtu.be/cZag0E32is0?si=PfW4f6xaOHYmTLvP"
+            >Click To Listen</a
+          >
+        </div>
+      </div>
+
+      <div class="song">
+        <a href="images/music/jazz/laufey.jpg" target="_self">
+          <img
+            src="images/music/jazz/laufey.jpg"
+            alt="Valentine by Laufey"
+            title="Valentine by Laufey"
+          />
+        </a>
+        <div class="song-content">
+          <h3>Valentine</h3>
+          <p>
+            <b>Artist:</b> Laufey is an Icelandic-Chinese singer-songwriter who
+            has revitalized traditional jazz for Gen Z by blending it with
+            modern pop sensibilities. She is celebrated for her deep, velvety
+            contralto voice and her "modern-day Audrey Hepburn" aesthetic.
+          </p>
+          <p>
+            <b>About the Song:</b> This charming, acoustic track explores the
+            jittery, sweet anxiety of falling in love for the first time during
+            the Valentine season. It captures the transition from being a
+            cynical "hopeless romantic" to someone who finally has a reason to
+            celebrate love.
+          </p>
+          <a href="https://youtu.be/tyKu0uZS86Q?si=xrZYGlptrCuJkGmY"
+            >Click To Listen</a
+          >
+        </div>
+      </div>
+
+      <div class="song">
+        <a href="images/music/jazz/sitti.jpg" target="_self">
+          <img
+            src="images/music/jazz/sitti.jpg"
+            alt="Para sa Akin by Sitti Navarro"
+            title="Para sa Akin by Sitti Navarro"
+          />
+        </a>
+        <div class="song-content">
+          <h3>Para sa Akin</h3>
+          <p>
+            <b>Artist:</b> Sitti Navarro is the Philippines' "Queen of Bossa
+            Nova," credited with popularizing the Brazilian genre in the local
+            mainstream. Her calm, soothing vocal style has made her a staple in
+            Philippine lounge and easy-listening music.
+          </p>
+          <p>
+            <b>About the Song:</b> This OPM classic is a gentle declaration of
+            unconditional love and patience regardless of the other person's
+            feelings. Its breezy, rhythmic arrangement makes it a timeless
+            favorite for weddings and romantic playlists.
+          </p>
+          <a href="https://youtu.be/lkmcx3HFHjk?si=rNFQJFASwohaRHbx"
+            >Click To Listen</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Go back to top after Jazz -->
+    <a href="#bottom" class="jump-to-bottom">Go to Bottom</a>
+    <a href="#top" class="back-to-top-song">Go Back to Top</a>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- POP -->
+    <h2 id="pop">Pop</h2>
+    <div class="song-container">
+      <div class="song">
+        <a href="images/music/pop/sab.jpg" target="_self">
+          <img
+            src="images/music/pop/sab.jpg"
+            alt="Busy Woman by Sabrina Carpenter"
+            title="Busy Woman by Sabrina Carpenter"
+          />
+        </a>
+        <div class="song-content">
+          <h3>Busy Woman</h3>
+          <p>
+            <b>Artist:</b> Sabrina Carpenter is a global pop star known for her
+            clever, "tongue-in-cheek" songwriting and vintage-inspired stage
+            presence. She has successfully transitioned from a teen star to a
+            critically acclaimed artist with a signature witty charm.
+          </p>
+          <p>
+            <b>About the Song:</b> This upbeat, funky track celebrates a woman
+            who is highly productive and self-sufficient but willing to clear
+            her schedule for the right person. It highlights Sabrina's ability
+            to turn modern dating dynamics into catchy, relatable pop anthems.
+          </p>
+          <a href="https://youtu.be/3m6NBnqLc-g?si=ToOtwZvt9tjO-tA3"
+            >Click To Listen</a
+          >
+        </div>
+      </div>
+
+      <div class="song">
+        <a href="images/music/pop/ari.jpg" target="_self">
+          <img
+            src="images/music/pop/ari.jpg"
+            alt="intro (end of the world) by Ariana Grande"
+            title="intro (end of the world) by Ariana Grande"
+          />
+        </a>
+        <div class="song-content">
+          <h3>intro (end of the world)</h3>
+          <p>
+            <b>Artist:</b> Ariana Grande is one of the most successful vocalists
+            of the 21st century, renowned for her four-octave range and whistle
+            register. Her music often blends R&B, pop, and trap while exploring
+            themes of love, grief, and self-discovery.
+          </p>
+          <p>
+            <b>About the Song:</b> This ethereal opening track from eternal
+            sunshine poses a philosophical question about the certainty of a
+            partner's love. It sets a dreamy, introspective tone for the album,
+            questioning how one knows if they are truly with the right person.
+          </p>
+          <a href="https://youtu.be/p7jATa6Soag?si=6GIsswfI256dte-d"
+            >Click To Listen</a
+          >
+        </div>
+      </div>
+
+      <div class="song">
+        <a href="images/music/pop/raye.png" target="_self">
+          <img
+            src="images/music/pop/raye.png"
+            alt="WHERE IS MY HUSBAND! by RAYE"
+            title="WHERE IS MY HUSBAND! by RAYE"
+          />
+        </a>
+        <div class="song-content">
+          <h3>WHERE IS MY HUSBAND!</h3>
+          <p>
+            <b>Artist:</b> RAYE is a multi-award-winning British independent
+            artist who reclaimed her career after leaving a major label to
+            release jazz and blues-infused pop. She is widely praised for her
+            raw honesty and her ability to blend theatrical storytelling with
+            modern R&B.
+          </p>
+          <p>
+            <b>About the Song:</b> This bluesy, dramatic track is a humorous yet
+            soulful lament about the exhaustion and absurdity of modern dating.
+            It features RAYE’s powerhouse vocals as she loudly wonders when her
+            search for a serious life partner will finally end.
+          </p>
+          <a href="https://youtu.be/rK5TyISxZ_M?si=0KrkI914uM7BjcSu"
+            >Click To Listen</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <a href="#bottom" class="jump-to-bottom">Go to Bottom</a>
+    <a href="#top" class="back-to-top-song">Go Back to Top</a>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- K-POP -->
+    <h2 id="kpop">K-Pop</h2>
+    <div class="song-container">
+      <div class="song">
+        <a href="images/music/kpop/bts.jpg" target="_self">
+          <img
+            src="images/music/kpop/bts.jpg"
+            alt="Life Goes On by BTS"
+            title="Life Goes On by BTS"
+          />
+        </a>
+        <div class="song-content">
+          <h3>Life Goes On</h3>
+          <p>
+            <b>Artist:</b> BTS is a world-renowned South Korean boy band known
+            for their diverse musicality and lyrics that address social and
+            personal themes. They have become global icons by fostering a deep
+            emotional connection with their fans, the ARMY.
+          </p>
+          <p>
+            <b>About the Song:</b> Released during the height of the global
+            pandemic, this alternative hip-hop track offers a message of healing
+            and resilience. It serves as a gentle reminder that even though the
+            world seems to have stopped, life—and the hope for a better
+            day—continues.
+          </p>
+          <a href="https://youtu.be/-5q5mZbe3V8?si=X3E4oMa7nBqwz2tW"
+            >Click To Listen</a
+          >
+        </div>
+      </div>
+
+      <div class="song">
+        <a href="images/music/kpop/iu.png" target="_self">
+          <img
+            src="images/music/kpop/iu.png"
+            alt="Love Wins All by IU"
+            title="Love Wins All by IU"
+          />
+        </a>
+        <div class="song-content">
+          <h3>Love Wins All</h3>
+          <p>
+            <b>Artist:</b> IU is South Korea’s most beloved solo artist,
+            celebrated for her poetic lyricism and her transition from a "pop
+            idol" to a respected singer-songwriter. She is often called "The
+            Nation's Sweetheart" for her warm personality and consistently
+            chart-topping music.
+          </p>
+          <p>
+            <b>About the Song:</b> This cinematic ballad is a grand anthem about
+            the power of love to serve as a shield in a cruel and judgmental
+            world. It is famous for its soaring high notes and its high-budget,
+            emotional music video featuring V of BTS.
+          </p>
+          <a href="https://youtu.be/JleoAppaxi0?si=GEt-cjC-2on9lVqL"
+            >Click To Listen</a
+          >
+        </div>
+      </div>
+
+      <div class="song">
+        <a href="images/music/kpop/reve.jpg" target="_self">
+          <img
+            src="images/music/kpop/reve.jpg"
+            alt="In My Dreams by Red Velvet"
+            title="In My Dreams by Red Velvet"
+          />
+        </a>
+        <div class="song-content">
+          <h3>In My Dreams</h3>
+          <p>
+            <b>Artist:</b> Red Velvet is a unique K-pop girl group known for
+            their "dual" concept: their bright "Red" side and their
+            sophisticated, R&B-focused "Velvet" side. They are highly respected
+            for their intricate vocal harmonies and experimental music videos.
+          </p>
+          <p>
+            <b>About the Song:</b> This slow-tempo R&B track is a standout for
+            its lush, dream-like atmosphere and melancholic lyrics. It tells the
+            story of wanting to stay asleep because the person they love only
+            exists within their dreams.
+          </p>
+          <a href="https://youtu.be/jpEebbF-hAo?si=EGqm7tf-0eqomu69"
+            >Click To Listen</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <a href="#bottom" class="jump-to-bottom">Go to Bottom</a>
+    <a href="#top" class="back-to-top-song">Go Back to Top</a>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- R&B -->
+    <h2 id="rnb">R&B</h2>
+    <div class="song-container">
+      <div class="song">
+        <a href="images/music/rnb/dchild.jpg" target="_self">
+          <img
+            src="images/music/rnb/dchild.jpg"
+            alt="Brown Eyes by Destiny's Child"
+            title="Brown Eyes by Destiny's Child"
+          />
+        </a>
+        <div class="song-content">
+          <h3>Brown Eyes</h3>
+          <p>
+            <b>Artist:</b> Destiny’s Child is one of the most successful female
+            groups of all time, featuring Beyoncé, Kelly Rowland, and Michelle
+            Williams. They are credited with defining the sound and fashion of
+            early 2000s R&B through their intricate harmonies and empowering
+            lyrics.
+          </p>
+          <p>
+            <b>About the Song:</b> This tender ballad focuses on the moment of
+            realization when a woman sees her future in her partner’s eyes. It
+            showcases the group’s softer side, relying on vocal purity and a
+            gentle, mid-tempo production.
+          </p>
+          <a href="https://youtu.be/Mktlac3D7H0?si=krWnHq5FQSxZHwth"
+            >Click To Listen</a
+          >
+        </div>
+      </div>
+
+      <div class="song">
+        <a href="images/music/rnb/mariah.jpg" target="_self">
+          <img
+            src="images/music/rnb/mariah.jpg"
+            alt="It's a Wrap by Mariah Carey"
+            title="It's a Wrap by Mariah Carey"
+          />
+        </a>
+        <div class="song-content">
+          <h3>It's a Wrap</h3>
+          <p>
+            <b>Artist:</b> Mariah Carey is the "Songbird Supreme," legendary for
+            her five-octave range and her status as one of the best-selling
+            female artists ever. Beyond her vocals, she is a prolific songwriter
+            and producer who shaped the modern R&B-pop landscape.
+          </p>
+          <p>
+            <b>About the Song:</b> This sassy, 1950s-inspired R&B track is a
+            decisive "enough is enough" anthem about cutting off an unreliable
+            partner. It features Mariah’s signature vocal runs and has seen a
+            massive resurgence due to its viral success on social media.
+          </p>
+          <a href="https://youtu.be/fszuqgWTPo0?si=3F876ptqEPIkNmSh"
+            >Click To Listen</a
+          >
+        </div>
+      </div>
+
+      <div class="song">
+        <a href="images/music/rnb/cole.jpg" target="_self">
+          <img
+            src="images/music/rnb/cole.jpg"
+            alt="Love by Keyshia Cole"
+            title="Love by Keyshia Cole"
+          />
+        </a>
+        <div class="song-content">
+          <h3>Love</h3>
+          <p>
+            <b>Artist:</b> Keyshia Cole is an American R&B singer who became a
+            voice for the "hopeless romantic" in the mid-2000s with her raw,
+            soulful delivery. She is often compared to Mary J. Blige for her
+            ability to sing about heartbreak and urban life with deep
+            authenticity.
+          </p>
+          <p>
+            <b>About the Song:</b> This gut-wrenching power ballad is famous for
+            its intense emotional vulnerability and Keyshia’s powerful, soaring
+            high notes. It describes the deep pain and frustration of being in
+            love with someone who doesn't seem to care enough to stay.
+          </p>
+          <a href="https://youtu.be/fszuqgWTPo0?si=NA5dmIxWhfJqhhjn"
+            >Click To Listen</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <a href="#bottom" class="jump-to-bottom">Go to Bottom</a>
+    <a href="#top" class="back-to-top-song">Go Back to Top</a>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- OPM -->
+    <h2 id="opm">OPM</h2>
+    <div class="song-container">
+      <div class="song">
+        <a href="images/music/opm/apo.jpg" target="_self">
+          <img
+            src="images/music/opm/apo.jpg"
+            alt="Ewan by APO Hiking Society"
+            title="Ewan by APO Hiking Society"
+          />
+        </a>
+        <div class="song-content">
+          <h3>Ewan</h3>
+          <p>
+            <b>Artist:</b> APO Hiking Society was a legendary trio that
+            spearheaded the "Manila Sound" and became a cornerstone of Filipino
+            culture. Their music often focused on humor, national pride, and the
+            relatable experiences of everyday Filipinos.
+          </p>
+          <p>
+            <b>About the Song:</b> This classic OPM track captures the essence
+            of "Ligawan" (traditional courtship), where a man tries to win over
+            a girl who keeps responding with "Ewan" (I don't know). It remains
+            one of the most popular songs for serenading in the Philippines.
+          </p>
+          <a href="https://youtu.be/phY09-9F1xg?si=ehGZqy61feXLRxjT"
+            >Click To Listen</a
+          >
+        </div>
+      </div>
+
+      <div class="song">
+        <a href="images/music/opm/cinderella.jpg" target="_self">
+          <img
+            src="images/music/opm/cinderella.jpg"
+            alt="Bato sa Buhangin by Cinderella"
+            title="Bato sa Buhangin by Cinderella"
+          />
+        </a>
+        <div class="song-content">
+          <h3>Bato sa Buhangin</h3>
+          <p>
+            <b>Artist:</b> Cinderella was a prominent band in the 1970s known
+            for their soft, melodic pop sound that defined the "Manila Sound"
+            era. Their lead singer’s gentle vocals became synonymous with the
+            sentimental ballads of that decade.
+          </p>
+          <p>
+            <b>About the Song:</b> This poetic ballad compares a lasting love to
+            a stone thrown on the sand, questioning if a relationship is
+            permanent or just a passing whim. It is considered one of the most
+            beautiful and nostalgic love songs in the history of OPM.
+          </p>
+          <a href="https://youtu.be/p5kHmcwvwT4?si=x-u9V5sgAS-6DYXg"
+            >Click To Listen</a
+          >
+        </div>
+      </div>
+
+      <div class="song">
+        <a href="images/music/opm/pasilyo.jpg" target="_self">
+          <img
+            src="images/music/opm/pasilyo.jpg"
+            alt="Pasilyo by Sunkissed Lola"
+            title="Pasilyo by Sunkissed Lola"
+          />
+        </a>
+        <div class="song-content">
+          <h3>Pasilyo</h3>
+          <p>
+            <b>Artist:</b> Sunkissed Lola is a modern Filipino band that gained
+            massive popularity for their soulful blend of indie pop and R&B.
+            They are known for creating "vibe-heavy" music that resonates with
+            the younger generation’s romantic experiences.
+          </p>
+          <p>
+            <b>About the Song:</b> This viral hit is a heartfelt celebration of
+            the moment a person watches their partner walk down the church aisle
+            (pasilyo). Its soulful melody and romantic lyrics have made it the
+            definitive modern Filipino wedding anthem.
+          </p>
+          <a href="https://youtu.be/XToA-1dZYWA?si=7QLBAS232aVAQv8A"
+            >Click To Listen</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <h3 id="pages">Navigate:</h3>
+    <a href="index.html">Home</a>&nbsp;&nbsp;
+    <a href="music.html">Music</a>&nbsp;&nbsp;
+    <a href="movie.html">Movies</a>&nbsp;&nbsp;
+    <a href="tv.html">TV Shows</a>&nbsp;&nbsp;
+    <a href="index.html#pages">Blogs</a>
+
+    <!-- Final Go Back to Top at bottom -->
+    <div id="bottom" style="margin: 40px 0">
+      <a href="#top" class="back-to-top">Go Back to Top</a>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 Penny Wrinkler. All Rights Reserved.</p>
+      <p>
+        <a href="index.html">Home</a> | <a href="contact.html">Contact</a> |
+        <a href="biography.html">About Me</a>
+      </p>
+    </footer>
+  </body>
+</html>

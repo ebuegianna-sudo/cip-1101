@@ -1,0 +1,721 @@
+<!doctype html>
+<html>
+  <head>
+    <title>My TV Shows</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background-color: #f7f7f7;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+
+      /* HEADER */
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 40px;
+      }
+
+      .header a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        margin-left: 15px;
+      }
+
+      hr {
+        border: 0;
+        height: 5px;
+        background-color: #e1cead;
+      }
+
+      /* CATEGORIES */
+      .categories h3 {
+        display: inline-block;
+        margin: 0 15px;
+        cursor: pointer;
+        color: black;
+      }
+
+      /* MOVIE CARDS */
+      .movie-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin: 20px 20px;
+      }
+
+      .movie {
+        display: flex;
+        gap: 20px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        border: 1px solid #e1cead;
+        align-items: flex-start;
+        text-align: left;
+
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .movie img {
+        width: 220px;
+        height: auto;
+        border-radius: 5px;
+        flex-shrink: 0;
+      }
+
+      .movie-content {
+        flex: 1;
+      }
+
+      .movie-content h3 {
+        margin-top: 0;
+      }
+
+      .movie-content p {
+        margin: 10px 0;
+      }
+
+      .movie-content a {
+        display: inline-block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: black;
+        background-color: #e1cead;
+        padding: 8px 15px;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+
+      .back-to-top {
+        display: inline-block;
+        margin: 20px 0;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e1cead;
+        border-radius: 5px;
+        padding: 10px 20px;
+      }
+
+      .jump-to-bottom {
+        display: inline-block;
+        margin: 20px 0;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e1cead;
+        border-radius: 5px;
+        padding: 10px 20px;
+      }
+
+      .back-to-top-movie {
+        display: inline-block;
+        margin: 20px 0;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e1cead;
+        border-radius: 5px;
+        padding: 10px 20px;
+
+        margin-left: 630px; /* keep your positioning */
+        margin-right: 60px;
+      }
+
+      .jump-to-bottom {
+        display: inline-block;
+        margin: 20px 0;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e1cead;
+        border-radius: 5px;
+        padding: 10px 20px;
+
+        margin-left: 60px;
+      }
+
+      .movie-buttons {
+        max-width: 900px; /* same as .movie */
+        margin: 20px auto; /* center it */
+        display: flex;
+        justify-content: space-between;
+        /* pushes left and right */
+      }
+
+      footer {
+        background-color: #e1cead;
+        padding: 20px 0;
+        margin-top: 40px;
+      }
+
+      footer a {
+        color: black;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+
+      h1,
+      h2 {
+        margin-top: 40px;
+      }
+
+      .center-img {
+        display: block;
+        margin: 0 auto 20px auto;
+        max-width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="top"></div>
+
+    <!-- HEADER -->
+    <div class="header">
+      <a href="index.html">
+        <img
+          src="images/index/PennyWrinkleLogo.png"
+          height="50"
+          alt="Penny Wrinkle Logo"
+          title="Penny Wrinkle Logo"
+        />
+      </a>
+
+      <div>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="biography.html">About Me</a>
+        <a href="#pages">Pages</a>
+        <a href="index.html#pages">Blogs</a>
+        <a href="photogallery.html">Gallery</a>
+        <a href="media.html">Media</a>
+      </div>
+    </div>
+
+    <hr />
+
+    <h1>My Favorite TV Shows</h1>
+    <a href="images/tv/television.jpg" target="_self">
+      <img
+        src="images/tv/television.jpg"
+        alt="Television"
+        title="Television"
+        class="center-img"
+        style="width: 250px"
+      />
+    </a>
+
+    <!-- Categories -->
+    <div class="categories">
+      <h2>Categories:</h2>
+      <a href="#kdrama"><h3>K-Drama</h3></a>
+      <a href="#anime"><h3>Anime</h3></a>
+      <a href="#filo"><h3>Filipino Drama</h3></a>
+      <a href="#western"><h3>Western Shows</h3></a>
+      <a href="#animated"><h3>Animated</h3></a>
+    </div>
+    <br />
+    <br />
+    <a href="#bottom" class="back-to-top">Jump to the Bottom</a>
+    <br />
+    <nr></nr>
+
+    <!-- KDRAMA -->
+    <h2 id="kdrama">K-Drama</h2>
+    <div class="movie-container">
+      <div class="movie">
+        <a href="images/tv/kdrama/hotel.jpg" target="_self">
+          <img
+            src="images/tv/kdrama/hotel.jpg"
+            alt="Hotel Del Luna"
+            title="Hotel Del Luna"
+          />
+        </a>
+        <div class="movie-content">
+          <h3>Hotel Del Luna</h3>
+          <p><b>Sub-genre: </b>Dark Fantasy, Romantic Comedy, Supernatural.</p>
+          <p><b>Director: </b>Oh Choong-hwan</p>
+          <p><b>Starring: </b>Lee Ji-eun (IU), Yeo Jin-goo</p>
+          <p>
+            <b>Synopsis: </b>Jang Man-wol is the moody owner of a mysterious
+            hotel that only caters to ghosts with unfinished business before
+            they move to the afterlife. She is forced to hire a human manager,
+            Gu Chan-sung, who slowly unravels the tragic secrets of her
+            1,300-year-old past.
+          </p>
+
+          <a href="https://youtu.be/WRGLqC-B_po?si=gqYNlLGNsBCl8lqf"
+            >Watch a Clip</a
+          >
+        </div>
+      </div>
+
+      <div class="movie">
+        <a href="images/tv/kdrama/goblin.jpg" target="_self">
+          <img
+            src="images/tv/kdrama/goblin.jpg"
+            alt="Goblin (Guardian: The Lonely and Great God)"
+            title="Goblin (Guardian: The Lonely and Great God)"
+          />
+        </a>
+        <div class="movie-content">
+          <h3>Goblin (Guardian: The Lonely and Great God)</h3>
+          <p><b>Sub-genre: </b>Fantasy, Romance, Melodrama.</p>
+          <p><b>Director: </b>Lee Eung-bok</p>
+          <p><b>Starring: </b>Gong Yoo, Kim Go-eun, Lee Dong-wook, Yoo In-na</p>
+          <p>
+            <b>Synopsis: </b>Kim Shin is an immortal goblin who has waited 900
+            years for a human bride to pull the sword from his chest and end his
+            cursed life. His destiny becomes intertwined with a high school
+            student who can see ghosts and a grim reaper who has no memory of
+            his past.
+          </p>
+          <a href="https://youtu.be/iC1GghHs9R8?si=x_qKmIe1B4XhhccH"
+            >Watch a Clip</a
+          >
+        </div>
+      </div>
+
+      <div class="movie">
+        <a href="images/tv/kdrama/business.jpg" target="_self">
+          <img
+            src="images/tv/kdrama/business.jpg"
+            alt="Business Proposal"
+            title="Business Proposal"
+          />
+        </a>
+        <div class="movie-content">
+          <h3>Business Proposal</h3>
+          <p><b>Sub-genre: </b>Romantic Comedy, Office Drama.</p>
+          <p><b>Director: </b>Park Seon-ho</p>
+          <p>
+            <b>Starring: </b>Ahn Hyo-seop, Kim Se-jeong, Kim Min-kyu, Seol In-ah
+          </p>
+          <p>
+            <b>Synopsis: </b>Shin Ha-ri goes on a blind date in place of her
+            wealthy friend to get rejected, only to discover that her date is
+            actually the CEO of her company. Things spiral out of control when
+            he decides to marry her to stop his grandfather from sending him on
+            more dates, forcing her to lead a double life.
+          </p>
+          <a href="https://youtu.be/jg-LQRaq-m8?si=PpwQcc9dtqBpTfYb"
+            >Watch a Clip</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <a href="#bottom" class="jump-to-bottom">Go to Bottom</a>
+    <a href="#top" class="back-to-top-movie">Go Back to Top</a>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- ANIME -->
+    <h2 id="anime">Anime</h2>
+    <div class="movie-container">
+      <div class="movie">
+        <a href="images/tv/anime/maomao.webp" target="_self">
+          <img
+            src="images/tv/anime/maomao.webp"
+            alt="The Apothecary Diaries"
+            title="The Apothecary Diaries"
+          />
+        </a>
+        <div class="movie-content">
+          <h3>The Apothecary Diaries</h3>
+          <p><b>Sub-genre: </b>Historical, Mystery, Medical Drama.</p>
+          <p><b>Director: </b>Norihiro Naganuma</p>
+          <p><b>Starring (Voices): </b>Yusuke Kobayashi, Makoto Furukawa</p>
+          <p>
+            <b>Synopsis: </b>Maomao, an apothecary's daughter, is kidnapped and
+            sold into service within the Emperor’s palace. Using her extensive
+            knowledge of poisons and medicine, she solves various medical
+            mysteries and palace conspiracies, eventually catching the eye of an
+            influential eunuch named Jinshi.
+          </p>
+
+          <a href="https://youtu.be/vlal8umyDGk?si=KiC3pWxMidh6s16O"
+            >Watch a Clip</a
+          >
+        </div>
+      </div>
+
+      <div class="movie">
+        <a href="images/tv/anime/drstone.jpeg" target="_self">
+          <img
+            src="images/tv/anime/drstone.jpeg"
+            alt="Dr.Stone"
+            title="Dr.Stone"
+          />
+        </a>
+        <div class="movie-content">
+          <h3>Dr. Stone</h3>
+          <p><b>Sub-genre: </b>Sci-Fi, Adventure, Post-apocalyptic.</p>
+          <p><b>Director: </b>Shinya Iino</p>
+          <p><b>Starring (Voices): </b>Yusuke Kobayashi, Makoto Furukawa</p>
+          <p>
+            <b>Synopsis: </b>Several millennia after a mysterious phenomenon
+            turns all of humanity into stone, a brilliant, science-loving boy
+            named Senku Ishigami awakens. He vows to use his scientific
+            knowledge to rebuild civilization from the ground up, starting a
+            "Kingdom of Science" in a world that has returned to nature.
+          </p>
+          <a href="https://youtu.be/-2Xt6UT0yPs?si=GK8ZlLdQRwRZX3Pm"
+            >Watch a Clip</a
+          >
+        </div>
+      </div>
+
+      <div class="movie">
+        <a href="images/tv/anime/family.jpg" target="_self">
+          <img
+            src="images/tv/anime/family.jpg"
+            alt="Spy x Family"
+            title="Spy x Family"
+          />
+        </a>
+        <div class="movie-content">
+          <h3>Spy x Family</h3>
+          <p><b>Sub-genre: </b>Action-Comedy, Spy, Slice-of-life.</p>
+          <p><b>Director: </b>Kazuhiro Furuhashi</p>
+          <p>
+            <b>Starring (Voices): </b>Takuya Eguchi, Atsumi Tanezaki, Saori
+            Hayami
+          </p>
+          <p>
+            <b>Synopsis: </b>To complete a high-stakes mission, a master spy
+            creates a fake family, unaware that his "wife" is a professional
+            assassin and his "daughter" is a telepath. The three must navigate
+            the challenges of being a "normal" family while hiding their secret
+            identities from each other and the world.
+          </p>
+          <a href="https://youtu.be/84sItmacPj4?si=BciwuzdGqDTDRnEC"
+            >Watch a Clip</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <a href="#bottom" class="jump-to-bottom">Go to Bottom</a>
+    <a href="#top" class="back-to-top-movie">Go Back to Top</a>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- FIL DRAMA-->
+    <h2 id="filo">Filipino Drama</h2>
+    <div class="movie-container">
+      <div class="movie">
+        <a href="images/tv/filo/mutya.webp" target="_self">
+          <img
+            src="images/tv/filo/mutya.webp"
+            alt="Ang Mutya ng Section E"
+            title="Ang Mutya ng Section E"
+          />
+        </a>
+        <div class="movie-content">
+          <h3>Ang Mutya ng Section E</h3>
+          <p><b>Sub-genre: </b>Teen Romance, Comedy, High School.</p>
+          <p><b>Director: </b>Theodore Boborol</p>
+          <p><b>Starring: </b>Ashtine Olviga, Andres Muhlach</p>
+          <p>
+            <b>Synopsis: </b>Jay-jay, a girl who grew up with boys, finds
+            herself transferring to a school where she is the only girl in the
+            notorious "Section E." She must navigate the chaotic energy of her
+            rowdy classmates while slowly finding her place—and perhaps
+            love—among them.
+          </p>
+
+          <a href="https://youtu.be/AtcBTsVJbro?si=n9d9PHu2jYWi_NEm">
+            Watch a Clip</a
+          >
+        </div>
+      </div>
+
+      <div class="movie">
+        <a href="images/tv/filo/donny.webp" target="_self">
+          <img
+            src="images/tv/filo/donny.webp"
+            alt="He's Into Her"
+            title="He's Into Her"
+          />
+        </a>
+        <div class="movie-content">
+          <h3>He's Into Her</h3>
+          <p><b>Sub-genre: </b>Rom-com, Coming-of-age, Teen Drama.</p>
+          <p><b>Director: </b>Chad Vidanes</p>
+          <p><b>Starring: </b>Donny Pangilinan, Belle Mariano</p>
+          <p>
+            <b>Synopsis: </b>Maxpein, a spunky girl from the province, moves to
+            Manila to live with her wealthy father and enrolls in a prestigious
+            school. She immediately clashes with the popular school heartthrob,
+            Deib Lohr, leading to a series of pranks and confrontations that
+            eventually turn into a deep, complicated romance.
+          </p>
+          <a href="https://youtu.be/l_tg5r270W0?si=abmjr2WXYRe6aGBE"
+            >Watch a Clip</a
+          >
+        </div>
+      </div>
+
+      <div class="movie">
+        <a href="images/tv/filo/diamond.jpg" target="_self">
+          <img
+            src="images/tv/filo/diamond.jpg"
+            alt="Avenues of the Diamond (University Series)"
+            title="Avenues of the Diamond (University Series)"
+          />
+        </a>
+        <div class="movie-content">
+          <h3>Avenues of the Diamond (University Series)</h3>
+          <p><b>Sub-genre: </b>New Adult, Romance, Drama.</p>
+          <p><b>Director: </b>Theodore Boborol</p>
+          <p><b>Starring: </b>Aubrey Caraan, Lance Carr</p>
+          <p>
+            <b>Synopsis: </b>Samantha Vera, a model and student, finds her life
+            taking an unexpected turn when her parents arrange for her to marry
+            a medical student named Clyden Ramirez. The story follows their
+            journey from a forced engagement to navigating the pressures of
+            their respective careers and finding genuine love.
+          </p>
+          <a href="https://youtu.be/X43MpvJ2g1g?si=DD82iy5S9wCnC8wX"
+            >Watch a Clip</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <a href="#bottom" class="jump-to-bottom">Go to Bottom</a>
+    <a href="#top" class="back-to-top-movie">Go Back to Top</a>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- WESTERN -->
+    <h2 id="western">Western Shows</h2>
+    <div class="movie-container">
+      <div class="movie">
+        <a href="images/tv/western/vampire.webp" target="_self">
+          <img
+            src="images/tv/western/vampire.webp"
+            alt="The Vampire Diaries"
+            title="The Vampire Diaries"
+          />
+        </a>
+        <div class="movie-content">
+          <h3>The Vampire Diaries</h3>
+          <p><b>Sub-genre: </b>Supernatural Drama, Horror, Romance.</p>
+          <p><b>Director: </b>Kevin Williamson, Julie Plec</p>
+          <p><b>Starring: </b>Nina Dobrev, Paul Wesley, Ian Somerhalder</p>
+          <p>
+            <b>Synopsis: </b>High schooler Elena Gilbert falls in love with
+            Stefan Salvatore, a centuries-old vampire, only to find herself in a
+            love triangle with his dangerous brother, Damon. Her life is forever
+            changed as she discovers the supernatural history of her town,
+            Mystic Falls, involving witches, werewolves, and hunters.
+          </p>
+
+          <a href="https://youtu.be/BmVmhjjkN4E?si=Qw0dblQ7a9yV4Y4B"
+            >Watch a Clip</a
+          >
+        </div>
+      </div>
+
+      <div class="movie">
+        <a href="images/tv/western/wed.jpg" target="_self">
+          <img
+            src="images/tv/western/wed.jpg"
+            alt="Wednesday"
+            title="Wednesday"
+          />
+        </a>
+        <div class="movie-content">
+          <h3>Wednesday</h3>
+          <p>
+            <b>Sub-genre: </b>Supernatural Mystery, Comedy Horror,
+            Coming-of-age.
+          </p>
+          <p><b>Director: </b>Tim Burton (Lead Director)</p>
+          <p><b>Starring: </b>Jenna Ortega, Emma Myers, Hunter Doohan</p>
+          <p>
+            <b>Synopsis: </b>Wednesday Addams is sent to Nevermore Academy, a
+            boarding school for outcasts, after her latest expulsion. While
+            there, she attempts to master her emerging psychic abilities, solve
+            a monstrous killing spree, and uncover a mystery that involved her
+            parents 25 years ago.
+          </p>
+          <a href="https://youtu.be/NakTu_VZxJ0?si=R-GVV4h9YVTw5jmI"
+            >Watch a Clip</a
+          >
+        </div>
+      </div>
+
+      <div class="movie">
+        <a href="images/tv/western/queen.webp" target="_self">
+          <img
+            src="images/tv/western/queen.webp"
+            alt="Bridgerton"
+            title="Bridgerton"
+          />
+        </a>
+        <div class="movie-content">
+          <h3>Bridgerton</h3>
+          <p>
+            <b>Sub-genre: </b>Regency Romance, Period Drama, Alternate History.
+          </p>
+          <p><b>Director: </b>Chris Van Dusen / Jess Brownell</p>
+          <p>
+            <b>Starring: </b>Adjoa Andoh, Julie Andrews (voice), Golda Rosheuvel
+            (Ensemble Cast)
+          </p>
+          <p>
+            <b>Synopsis: </b>Set in the competitive world of Regency Era
+            London’s ton, the eight siblings of the powerful Bridgerton family
+            search for love and marriage. Their lives are scrutinized by an
+            anonymous and sharp-tongued gossip columnist known only as Lady
+            Whistledown.
+          </p>
+          <a href="https://youtu.be/oOynqTO_LUI?si=dd_cjKX2YWTrR9Vu"
+            >Watch a Clip</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <a href="#bottom" class="jump-to-bottom">Go to Bottom</a>
+    <a href="#top" class="back-to-top-movie">Go Back to Top</a>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- ANIMATED -->
+    <h2 id="animated">Animated</h2>
+    <div class="movie-container">
+      <div class="movie">
+        <a href="images/tv/animated/avatar.png" target="_self">
+          <img
+            src="images/tv/animated/avatar.png"
+            alt="Avatar: The Last Airbender"
+            title="Avatar: The Last Airbender"
+          />
+        </a>
+        <div class="movie-content">
+          <h3>Avatar: The Last Airbender</h3>
+          <p><b>Sub-genre: </b>Action-Adventure, Fantasy, Martial Arts.</p>
+          <p><b>Creators: </b>Michael Dante DiMartino, Bryan Konietzko</p>
+          <p>
+            <b
+              >Starring (Voices): Zach Tyler Eisen, Mae Whitman, Jack De Sena,
+              Dante Basco</b
+            >
+          </p>
+          <p>
+            <b>Synopsis: </b>A young boy named Aang, the long-lost Avatar, is
+            discovered frozen in an iceberg and must master the four elements to
+            stop the Fire Nation from conquering the world. Along with his
+            friends Katara and Sokka, he embarks on an epic journey to bring
+            balance back to the four nations.
+          </p>
+
+          <a href="https://youtu.be/eNcR-9lbNrw?si=lU-SpGLnKdF8V_qO"
+            >Watch a Clip</a
+          >
+        </div>
+      </div>
+
+      <div class="movie">
+        <a href="images/tv/animated/korra.jpg" target="_self">
+          <img
+            src="images/tv/animated/korra.jpg"
+            alt="The Legend of Korra"
+            title="The Legend of Korra"
+          />
+        </a>
+        <div class="movie-content">
+          <h3>The Legend of Korra</h3>
+          <p><b>Sub-genre: </b>Steampunk, Action-Adventure, Political Drama.</p>
+          <p><b>Creators: </b>Michael Dante DiMartino, Bryan Konietzko</p>
+          <p>
+            <b>Starring (Voices): </b>Janet Varney, David Faustino, P.J. Byrne
+          </p>
+          <p>
+            <b>Synopsis: </b>Set 70 years after the original series, the story
+            follows Avatar Korra, a headstrong girl from the Southern Water
+            Tribe, as she moves to Republic City. She must face anti-bending
+            revolutionaries, dark spirits, and political unrest while learning
+            to master the spiritual side of being the Avatar.
+          </p>
+          <a href="https://youtu.be/NBNpGCIavwA?si=cgihKrB0l_B9vkhz"
+            >Watch a Clip</a
+          >
+        </div>
+      </div>
+
+      <div class="movie">
+        <a href="images/tv/animated/mlp.jpg" target="_self">
+          <img
+            src="images/tv/animated/mlp.jpg"
+            alt="My Little Pony: Friendship Is Magic"
+            title="My Little Pony: Friendship Is Magic"
+          />
+        </a>
+        <div class="movie-content">
+          <h3>My Little Pony: Friendship Is Magic</h3>
+          <p><b>Sub-genre: </b>Fantasy, Comedy, Musical.</p>
+          <p><b>Creator: </b>Lauren Faust</p>
+          <p>
+            <b>Starring (Voices): </b>Tara Strong, Ashleigh Ball, Andrea Libman
+          </p>
+          <p>
+            <b>Synopsis: </b>Twilight Sparkle, a studious unicorn, is sent to
+            the town of Ponyville by her mentor, Princess Celestia, to learn the
+            true meaning of friendship. Alongside five diverse pony friends, she
+            embarks on various adventures across Equestria, discovering that
+            friendship is the most powerful magic of all.
+          </p>
+          <a href="https://youtu.be/bWFkW29hOfg?si=s6Jy-Rzi9ugzQxvn"
+            >Watch a Clip</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <h3 id="pages">Navigate:</h3>
+    <a href="index.html">Home</a>&nbsp;&nbsp;
+    <a href="music.html">Music</a>&nbsp;&nbsp;
+    <a href="movie.html">Movies</a>&nbsp;&nbsp;
+    <a href="tv.html">TV Shows</a>&nbsp;&nbsp;
+    <a href="index.html#pages">Blogs</a>
+
+    <!-- Final Go Back to Top at bottom -->
+    <div id="bottom" style="margin: 40px 0">
+      <a href="#top" class="back-to-top">Go Back to Top</a>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 Penny Wrinkler. All Rights Reserved.</p>
+      <p>
+        <a href="index.html">Home</a> | <a href="contact.html">Contact</a> |
+        <a href="biography.html">About Me</a>
+      </p>
+    </footer>
+  </body>
+</html>
