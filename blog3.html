@@ -128,13 +128,80 @@
         padding: 10px 20px;
         display: inline-block;
       }
+
+      .categories {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 10px;
+      }
+
+      .categories a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 18px; /* looks like h3 */
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+
+      .back-to-top-essay {
+        display: block;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e1cead;
+        border-radius: 5px;
+        padding: 10px 20px;
+        width: fit-content;
+        margin: 20px auto;
+      }
+
+      .jump-to-bottom {
+        display: inline-block;
+        margin: 20px 0;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e1cead;
+        border-radius: 5px;
+        padding: 10px 20px;
+      }
+
+      .back-to-top-blog {
+        display: inline-block;
+        margin: 20px 0;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e1cead;
+        border-radius: 5px;
+        padding: 10px 20px;
+      }
+
+      .jump-to-bottom {
+        display: inline-block;
+        margin: 20px 0;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e1cead;
+        border-radius: 5px;
+        padding: 10px 20px;
+      }
+
+      .button-row {
+        display: flex;
+        justify-content: space-between; /* one left, one right */
+        align-items: center; /* same vertical level */
+        margin: 20px 0;
+      }
     </style>
   </head>
 
   <body>
     <!-- HEADER -->
     <header id="top" class="header">
-      <a href="images/index/PennyWrinkleLogo.png">
+      <a href="images/index/PennyWrinkleLogo.png" target="_self">
         <img
           src="images/index/PennyWrinkleLogo.png"
           alt="Logo"
@@ -147,7 +214,9 @@
         <a href="contact.html">Contact</a>
         <a href="biography.html">About Me</a>
         <a href="#pages">Pages</a>
+        <a href="index.html#pages">Blogs</a>
         <a href="photogallery.html">Gallery</a>
+        <a href="media.html">Media</a>
       </div>
     </header>
 
@@ -161,18 +230,30 @@
 
       <br /><br />
       <a href="images/blog3/telescopes.png">
-      <img
-        src="images/blog3/telescopes.png"
-        alt="Telescope Image"
-        title="Telescope Image"
-        style="width: 250px; margin-left: 37%; margin-right: 50%"
-      />
+        <img
+          src="images/blog3/telescopes.png"
+          alt="Telescope Image"
+          title="Telescope Image"
+          style="width: 250px; margin-left: 37%; margin-right: 50%"
+        />
       </a>
       <br /><br />
 
-      <h3>CS, A Bird Cage for Math Addicts?</h3>
+      <h2>Categories:</h2>
+      <div class="categories">
+        <a href="#part1">Part 1</a>
+        <a href="#part2">Part 2</a>
+        <a href="#part3">Part 3</a>
+      </div>
+      <br />
+      <a href="#bottom" class="back-to-top-essay">Jump to the Bottom</a>
+      <br />
+      <nr></nr>
+      <br />
+
+      <h3 id="part1">CS, A Bird Cage for Math Addicts?</h3>
       <div class="clearfix">
-        <a href="images/blog3/sheldon.jpg">
+        <a href="images/blog3/sheldon.jpg" target="_self">
           <img
             src="images/blog3/sheldon.jpg"
             class="img-right"
@@ -200,6 +281,11 @@
         </p>
       </div>
 
+      <div class="button-row">
+        <a href="#bottom" class="jump-to-bottom">Go to Bottom</a>
+        <a href="#top" class="back-to-top-blog">Go Back to Top</a>
+      </div>
+
       <br /><br />
       <div style="text-align: center; margin: 20px 0">
         <img
@@ -210,9 +296,9 @@
         />
       </div>
 
-      <h3>Purpose Born From a Noble Testimony</h3>
+      <h3 id="part2">Purpose Born From a Noble Testimony</h3>
       <div class="clearfix">
-        <a href="images/blog3/praying.avif">
+        <a href="images/blog3/praying.avif" target="_self">
           <img
             src="images/blog3/praying.avif"
             class="img-left"
@@ -251,6 +337,11 @@
         </p>
       </div>
 
+      <div class="button-row">
+        <a href="#bottom" class="jump-to-bottom">Go to Bottom</a>
+        <a href="#top" class="back-to-top-blog">Go Back to Top</a>
+      </div>
+
       <br /><br />
       <div style="text-align: center; margin: 20px 0">
         <img
@@ -261,9 +352,9 @@
         />
       </div>
 
-      <h3>The Human In Technology</h3>
+      <h3 id="part3">The Human In Technology</h3>
       <div class="clearfix">
-        <a href="images/blog3/woman.jpg">
+        <a href="images/blog3/woman.jpg" target="_self">
           <img
             src="images/blog3/woman.jpg"
             class="img-right"
@@ -301,10 +392,11 @@
         id="pages"
         style="text-align: center; margin: 40px 0"
       >
-        <h3>Navigate:</h3>
+        <h3 id="bottom">Navigate:</h3>
         <a href="index.html">Home</a>
         <a href="blog1.html">Blog 1</a>
         <a href="blog2.html">Blog 2</a>
+        <a href="media.html">Media</a>
       </div>
 
       <div style="text-align: center; margin: 30px 0">
@@ -322,5 +414,3 @@
     </footer>
   </body>
 </html>
-
-
