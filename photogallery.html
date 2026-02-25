@@ -75,7 +75,7 @@
         font-weight: bold;
       }
 
-      .back-to-top {
+      .back-to-top, .jump-to-bottom {
         text-decoration: none;
         font-weight: bold;
         color: black;
@@ -85,6 +85,36 @@
         display: inline-block;
         margin: 20px 0;
       }
+
+      /* TEST */
+
+      .back-to-top-blog {
+        display: inline-block;
+        margin: 20px 0;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e1cead;
+        border-radius: 5px;
+        padding: 10px 20px;
+      }
+
+      .categories {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 10px;
+      }
+
+      .categories a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 18px; /* looks like h3 */
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+
+      /* */
 
       footer {
         background-color: #e1cead;
@@ -106,6 +136,15 @@
         -ms-overflow-style: none; /* IE and Edge */
         scrollbar-width: none; /* Firefox */
       }
+
+      /* TEST */
+      .button-row {
+              display: flex;
+              justify-content: space-between; /* one left, one right */
+              align-items: center; /* same vertical level */
+              margin: 20px 0;
+            }
+      
     </style>
   </head>
 
@@ -135,8 +174,22 @@
     </div>
 
     <!-- SECTION 1: Soul Pen Landing Page -->
-    <a href="index.html"><h2>Soul Pen Landing Page</h2></a>
+    <a href="index.html"><h2 id="part1">Soul Pen Landing Page</h2></a>
     <h4>Welcome.</h4>
+
+    <h2>Categories:</h2>
+      <div class="categories">
+        <a href="#part1">Part 1</a>
+        <a href="#part2">Part 2</a>
+        <a href="#part3">Part 3</a>
+        <a href="#part4">Part 4</a>
+        <a href="#part5">Part 5</a>
+      </div>
+      <br />
+      <a href="#bottom" class="jump-to-bottom">Jump to the Bottom</a>
+      <br />
+      <nr></nr>
+      <br />
 
     <div class="blog-cards-container">
       <div class="blog-card">
@@ -185,7 +238,7 @@
 
     <!-- BLOG 1 -->
     <a href="blog1.html"
-      ><h2>Blog 1: The Uncomfortable Truth About Programming</h2></a
+      ><h2 id="part2">Blog 1: The Uncomfortable Truth About Programming</h2></a
     >
     <h4>How much of your dreams do you keep to yourself?</h4>
 
@@ -230,13 +283,19 @@
       </div>
     </div>
 
+    <!--TEST-->
+    <div class="button-row">
+        <a href="#bottom" class="jump-to-bottom">Go to Bottom</a>
+        <a href="#top" class="back-to-top-blog">Go Back to Top</a>
+      </div>
+
     <div class="divider">
       <img src="images/index/border.png" width="600" alt="Divider" />
     </div>
 
     <!-- BLOG 2 -->
     <a href="blog2.html"
-      ><h2>Blog 2: Why Guitar Has Good Parenting Skills</h2></a
+      ><h2 id=part3>Blog 2: Why Guitar Has Good Parenting Skills</h2></a
     >
     <h4>What are the things that keep you going?</h4>
 
@@ -285,12 +344,21 @@
       </div>
     </div>
 
+    
+    <!--TEST-->
+    <div class="button-row">
+        <a href="#bottom" class="jump-to-bottom">Go to Bottom</a>
+        <a href="#top" class="back-to-top-blog">Go Back to Top</a>
+      </div>
+
+      <br /><br />
+
     <div class="divider">
       <img src="images/index/border.png" width="600" alt="Divider" />
     </div>
     <!-- BLOG 3 -->
     <a href="blog3.html"
-      ><h2>Blog 3: Why Technology is More Human Than We Think</h2></a
+      ><h2 id="part4">Blog 3: Why Technology is More Human Than We Think</h2></a
     >
     <h4>Where are you now currently in your life?</h4>
 
@@ -343,11 +411,18 @@
       </div>
     </div>
 
+    
+    <!--TEST-->
+     <div class="button-row">
+        <a href="#bottom" class="jump-to-bottom">Go to Bottom</a>
+        <a href="#top" class="back-to-top-blog">Go Back to Top</a>
+      </div>
+
     <div class="divider">
       <img src="images/index/border.png" width="600" alt="Divider" />
     </div>
     <!-- ABOUT ME -->
-    <a href="about.html"><h2>About Me</h2></a>
+    <a href="about.html"><h2 id="part5">About Me</h2></a>
     <h4>Just a snippet.</h4>
 
     <div class="blog-cards-container">
@@ -403,6 +478,13 @@
       </div>
     </div>
 
+    
+    <!--TEST-->
+    <div class="button-row">
+        <a href="#bottom" class="jump-to-bottom">Go to Bottom</a>
+        <a href="#top" class="back-to-top-blog">Go Back to Top</a>
+      </div>
+
     <div class="divider">
       <img src="images/index/border.png" width="600" alt="Divider" />
     </div>
@@ -455,7 +537,7 @@
     <br>
     <!-- NAVIGATION -->
     <div class="blog-links" id="pages">
-      <h3>Navigate:</h3>
+      <h3 id="bottom">Navigate:</h3>
       <a href="index.html">Home</a>
       <a href="blog1.html">Blog 1</a>
       <a href="blog2.html">Blog 2</a>
@@ -473,4 +555,5 @@
     </footer>
   </body>
 </html>
+
 
