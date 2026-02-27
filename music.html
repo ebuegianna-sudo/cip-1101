@@ -92,6 +92,25 @@
         font-weight: bold;
       }
 
+      .video-container {
+        max-width: 900px; /* same as your description/movie cards */
+        width: 100%; /* responsive */
+        margin: 20px auto; /* center horizontally */
+        background-color: white;
+        border: 1px solid #e1cead;
+        border-radius: 8px;
+        padding: 20px;
+        display: flex;
+        justify-content: center; /* center iframe */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* optional */
+      }
+
+      .video-container iframe {
+        width: 100%; /* fill the container */
+        height: 500px; /* you can adjust height */
+        border-radius: 5px;
+      }
+
       .back-to-top {
         display: inline-block;
         margin: 20px 0;
@@ -169,10 +188,9 @@
 
   <body>
     <div id="top"></div>
-
     <!-- HEADER -->
     <div class="header">
-      <a href="index.html">
+      <a href="images/index/PennyWrinkleLogo.png" target="winImage">
         <img
           src="images/index/PennyWrinkleLogo.png"
           height="50"
@@ -189,13 +207,15 @@
         <a href="index.html#pages">Blogs</a>
         <a href="photogallery.html">Gallery</a>
         <a href="media.html">Media</a>
+        <a href="places.html">Collage</a>
+        <a href="interests.html">Interests</a>
       </div>
     </div>
 
     <hr />
 
     <h1>My World of Music</h1>
-    <a href="images/music/sab.webp" target="_self">
+    <a href="images/music/sab.webp" target="winImage">
       <img
         src="images/music/sab.webp"
         alt="Vinyl"
@@ -207,7 +227,7 @@
 
     <!-- Categories -->
     <div class="categories">
-      <h2>Categories:</h2>
+      <h2>Browse:</h2>
       <a href="#jazz"><h3>Jazz</h3></a>
       <a href="#pop"><h3>Pop</h3></a>
       <a href="#kpop"><h3>K-Pop</h3></a>
@@ -221,9 +241,32 @@
     <nr></nr>
     <!-- JAZZ -->
     <h2 id="jazz">Jazz</h2>
+
+    <div class="video-container">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/6YucP-6EAS4?si=Tbu_ftFktwzxdSpu"
+        title="YouTube video player"
+        frameborder="0"
+        allow="
+          accelerometer;
+          autoplay;
+          clipboard-write;
+          encrypted-media;
+          gyroscope;
+          picture-in-picture;
+          web-share;
+        "
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      >
+      </iframe>
+    </div>
+
     <div class="song-container">
       <div class="song">
-        <a href="images/music/jazz/atLast.png" target="_self">
+        <a href="images/music/jazz/atLast.png" target="winImage">
           <img
             src="images/music/jazz/atLast.png"
             alt="At Last by Etta James"
@@ -244,14 +287,35 @@
             of longing. It is globally recognized for its lush orchestral
             arrangement and Etta’s iconic, emotive vocal delivery.
           </p>
-          <a href="https://youtu.be/cZag0E32is0?si=PfW4f6xaOHYmTLvP"
-            >Click To Listen</a
-          >
         </div>
       </div>
 
+      <br />
+
+      <div class="video-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/IOqEw0s27PA?si=sMaI8jaE9iGNJAdT"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+
       <div class="song">
-        <a href="images/music/jazz/laufey.jpg" target="_self">
+        <a href="images/music/jazz/laufey.jpg" target="winImage">
           <img
             src="images/music/jazz/laufey.jpg"
             alt="Valentine by Laufey"
@@ -273,14 +337,35 @@
             cynical "hopeless romantic" to someone who finally has a reason to
             celebrate love.
           </p>
-          <a href="https://youtu.be/tyKu0uZS86Q?si=xrZYGlptrCuJkGmY"
-            >Click To Listen</a
-          >
         </div>
       </div>
 
+      <br />
+
+      <div class="video-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/aIVdh5SFjaA?si=vWbr1Nip7AzKkeUP"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+
       <div class="song">
-        <a href="images/music/jazz/sitti.jpg" target="_self">
+        <a href="images/music/jazz/sitti.jpg" target="winImage">
           <img
             src="images/music/jazz/sitti.jpg"
             alt="Para sa Akin by Sitti Navarro"
@@ -301,9 +386,6 @@
             feelings. Its breezy, rhythmic arrangement makes it a timeless
             favorite for weddings and romantic playlists.
           </p>
-          <a href="https://youtu.be/lkmcx3HFHjk?si=rNFQJFASwohaRHbx"
-            >Click To Listen</a
-          >
         </div>
       </div>
     </div>
@@ -314,22 +396,54 @@
 
     <br />
     <br />
-    <br />
+
+    <div style="text-align: center; margin: 20px 0">
+      <img
+        src="images/index/border.png"
+        alt="Border"
+        title="Border PNG"
+        width="600px;"
+      />
+    </div>
+
     <br />
 
     <!-- POP -->
     <h2 id="pop">Pop</h2>
+
+    <div class="video-container">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/rOQcetiARFg?si=mBo26-kgWjBt5-D5"
+        title="YouTube video player"
+        frameborder="0"
+        allow="
+          accelerometer;
+          autoplay;
+          clipboard-write;
+          encrypted-media;
+          gyroscope;
+          picture-in-picture;
+          web-share;
+        "
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      >
+      </iframe>
+    </div>
+
     <div class="song-container">
       <div class="song">
-        <a href="images/music/pop/sab.jpg" target="_self">
+        <a href="images/music/pop/sab.jpg" target="winImage">
           <img
             src="images/music/pop/sab.jpg"
-            alt="Busy Woman by Sabrina Carpenter"
-            title="Busy Woman by Sabrina Carpenter"
+            alt="Please Please Please by Sabrina Carpenter"
+            title="Please Please Please by Sabrina Carpenter"
           />
         </a>
         <div class="song-content">
-          <h3>Busy Woman</h3>
+          <h3>Please Please Please</h3>
           <p>
             <b>Artist:</b> Sabrina Carpenter is a global pop star known for her
             clever, "tongue-in-cheek" songwriting and vintage-inspired stage
@@ -337,23 +451,44 @@
             critically acclaimed artist with a signature witty charm.
           </p>
           <p>
-            <b>About the Song:</b> This upbeat, funky track celebrates a woman
-            who is highly productive and self-sufficient but willing to clear
-            her schedule for the right person. It highlights Sabrina's ability
-            to turn modern dating dynamics into catchy, relatable pop anthems.
+            <b>About the Song:</b> This upbeat, funky track sings about a woman
+            with questionable taste in men but self-aware enough to beg her
+            boyfriend not to embarrass her. It highlights Sabrina's ability to
+            turn modern dating dynamics into catchy, relatable pop anthems.
           </p>
-          <a href="https://youtu.be/3m6NBnqLc-g?si=ToOtwZvt9tjO-tA3"
-            >Click To Listen</a
-          >
         </div>
       </div>
 
+      <br />
+
+      <div class="video-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/fGeH483gNOg?si=yD_JwLypAi0jEcQI"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+
       <div class="song">
-        <a href="images/music/pop/ari.jpg" target="_self">
+        <a href="images/music/pop/ari.jpg" target="winImage">
           <img
             src="images/music/pop/ari.jpg"
-            alt="intro (end of the world) by Ariana Grande"
-            title="intro (end of the world) by Ariana Grande"
+            alt="Imagine by Ariana Grande"
+            title="Imagine by Ariana Grande"
           />
         </a>
         <div class="song-content">
@@ -365,19 +500,40 @@
             themes of love, grief, and self-discovery.
           </p>
           <p>
-            <b>About the Song:</b> This ethereal opening track from eternal
-            sunshine poses a philosophical question about the certainty of a
-            partner's love. It sets a dreamy, introspective tone for the album,
-            questioning how one knows if they are truly with the right person.
+            <b>About the Song:</b> This track from "thank you, next" sings about
+            grieving a loved one that is no longer in their life. She reminisces
+            all the times she and her loved one had spent together but could now
+            only imagine such a world.
           </p>
-          <a href="https://youtu.be/p7jATa6Soag?si=6GIsswfI256dte-d"
-            >Click To Listen</a
-          >
         </div>
       </div>
 
+      <br />
+
+      <div class="video-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/fmLGO3PQQMk?si=Pi9K7WLBd43FlaWZ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+
       <div class="song">
-        <a href="images/music/pop/raye.png" target="_self">
+        <a href="images/music/pop/raye.png" target="winImage">
           <img
             src="images/music/pop/raye.png"
             alt="WHERE IS MY HUSBAND! by RAYE"
@@ -399,9 +555,6 @@
             It features RAYE’s powerhouse vocals as she loudly wonders when her
             search for a serious life partner will finally end.
           </p>
-          <a href="https://youtu.be/rK5TyISxZ_M?si=0KrkI914uM7BjcSu"
-            >Click To Listen</a
-          >
         </div>
       </div>
     </div>
@@ -411,14 +564,46 @@
 
     <br />
     <br />
-    <br />
+
+    <div style="text-align: center; margin: 20px 0">
+      <img
+        src="images/index/border.png"
+        alt="Border"
+        title="Border PNG"
+        width="600px;"
+      />
+    </div>
+
     <br />
 
     <!-- K-POP -->
     <h2 id="kpop">K-Pop</h2>
+
+    <div class="video-container">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/73tB2jH76zc?si=iSzqNC9EwPmZALc9"
+        title="YouTube video player"
+        frameborder="0"
+        allow="
+          accelerometer;
+          autoplay;
+          clipboard-write;
+          encrypted-media;
+          gyroscope;
+          picture-in-picture;
+          web-share;
+        "
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      >
+      </iframe>
+    </div>
+
     <div class="song-container">
       <div class="song">
-        <a href="images/music/kpop/bts.jpg" target="_self">
+        <a href="images/music/kpop/bts.jpg" target="winImage">
           <img
             src="images/music/kpop/bts.jpg"
             alt="Life Goes On by BTS"
@@ -440,14 +625,35 @@
             world seems to have stopped, life—and the hope for a better
             day—continues.
           </p>
-          <a href="https://youtu.be/-5q5mZbe3V8?si=X3E4oMa7nBqwz2tW"
-            >Click To Listen</a
-          >
         </div>
       </div>
 
+      <br />
+
+      <div class="video-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/ax1csKKQnns?si=Ng9aPFF9Y1RRN2XJ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+
       <div class="song">
-        <a href="images/music/kpop/iu.png" target="_self">
+        <a href="images/music/kpop/iu.png" target="winImage">
           <img
             src="images/music/kpop/iu.png"
             alt="Love Wins All by IU"
@@ -469,14 +675,13 @@
             world. It is famous for its soaring high notes and its high-budget,
             emotional music video featuring V of BTS.
           </p>
-          <a href="https://youtu.be/JleoAppaxi0?si=GEt-cjC-2on9lVqL"
-            >Click To Listen</a
-          >
         </div>
       </div>
+      <br />
+      <div class="video-container"></div>
 
       <div class="song">
-        <a href="images/music/kpop/reve.jpg" target="_self">
+        <a href="images/music/kpop/reve.jpg" target="winImage">
           <img
             src="images/music/kpop/reve.jpg"
             alt="In My Dreams by Red Velvet"
@@ -497,9 +702,6 @@
             story of wanting to stay asleep because the person they love only
             exists within their dreams.
           </p>
-          <a href="https://youtu.be/jpEebbF-hAo?si=EGqm7tf-0eqomu69"
-            >Click To Listen</a
-          >
         </div>
       </div>
     </div>
@@ -509,14 +711,26 @@
 
     <br />
     <br />
-    <br />
+
+    <div style="text-align: center; margin: 20px 0">
+      <img
+        src="images/index/border.png"
+        alt="Border"
+        title="Border PNG"
+        width="600px;"
+      />
+    </div>
+
     <br />
 
     <!-- R&B -->
     <h2 id="rnb">R&B</h2>
+
+    <div class="video-container"></div>
+
     <div class="song-container">
       <div class="song">
-        <a href="images/music/rnb/dchild.jpg" target="_self">
+        <a href="images/music/rnb/dchild.jpg" target="winImage">
           <img
             src="images/music/rnb/dchild.jpg"
             alt="Brown Eyes by Destiny's Child"
@@ -538,14 +752,33 @@
             showcases the group’s softer side, relying on vocal purity and a
             gentle, mid-tempo production.
           </p>
-          <a href="https://youtu.be/Mktlac3D7H0?si=krWnHq5FQSxZHwth"
-            >Click To Listen</a
-          >
         </div>
+      </div>
+      <br />
+      <div class="video-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/DcmaNPs9XDA?si=n9d1_9yWqmVlRvPG"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        >
+        </iframe>
       </div>
 
       <div class="song">
-        <a href="images/music/rnb/mariah.jpg" target="_self">
+        <a href="images/music/rnb/mariah.jpg" target="winImage">
           <img
             src="images/music/rnb/mariah.jpg"
             alt="It's a Wrap by Mariah Carey"
@@ -566,14 +799,33 @@
             partner. It features Mariah’s signature vocal runs and has seen a
             massive resurgence due to its viral success on social media.
           </p>
-          <a href="https://youtu.be/fszuqgWTPo0?si=3F876ptqEPIkNmSh"
-            >Click To Listen</a
-          >
         </div>
+      </div>
+      <br />
+      <div class="video-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/8q5s1clmU5Y?si=D-NqTSizm8ATXEUH"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        >
+        </iframe>
       </div>
 
       <div class="song">
-        <a href="images/music/rnb/cole.jpg" target="_self">
+        <a href="images/music/rnb/cole.jpg" target="winImage">
           <img
             src="images/music/rnb/cole.jpg"
             alt="Love by Keyshia Cole"
@@ -595,9 +847,6 @@
             high notes. It describes the deep pain and frustration of being in
             love with someone who doesn't seem to care enough to stay.
           </p>
-          <a href="https://youtu.be/fszuqgWTPo0?si=NA5dmIxWhfJqhhjn"
-            >Click To Listen</a
-          >
         </div>
       </div>
     </div>
@@ -607,14 +856,46 @@
 
     <br />
     <br />
-    <br />
+
+    <div style="text-align: center; margin: 20px 0">
+      <img
+        src="images/index/border.png"
+        alt="Border"
+        title="Border PNG"
+        width="600px;"
+      />
+    </div>
+
     <br />
 
     <!-- OPM -->
     <h2 id="opm">OPM</h2>
+
+    <div class="video-container">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/X9XSzcATIco?si=9JkFALV46RLrM2Q3"
+        title="YouTube video player"
+        frameborder="0"
+        allow="
+          accelerometer;
+          autoplay;
+          clipboard-write;
+          encrypted-media;
+          gyroscope;
+          picture-in-picture;
+          web-share;
+        "
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      >
+      </iframe>
+    </div>
+
     <div class="song-container">
       <div class="song">
-        <a href="images/music/opm/apo.jpg" target="_self">
+        <a href="images/music/opm/apo.jpg" target="winImage">
           <img
             src="images/music/opm/apo.jpg"
             alt="Ewan by APO Hiking Society"
@@ -635,14 +916,33 @@
             a girl who keeps responding with "Ewan" (I don't know). It remains
             one of the most popular songs for serenading in the Philippines.
           </p>
-          <a href="https://youtu.be/phY09-9F1xg?si=ehGZqy61feXLRxjT"
-            >Click To Listen</a
-          >
         </div>
+      </div>
+      <br />
+      <div class="video-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Jh7JG87KsUU?si=O7yuVt5wA4Q4OrX5"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        >
+        </iframe>
       </div>
 
       <div class="song">
-        <a href="images/music/opm/cinderella.jpg" target="_self">
+        <a href="images/music/opm/cinderella.jpg" target="winImage">
           <img
             src="images/music/opm/cinderella.jpg"
             alt="Bato sa Buhangin by Cinderella"
@@ -663,14 +963,33 @@
             permanent or just a passing whim. It is considered one of the most
             beautiful and nostalgic love songs in the history of OPM.
           </p>
-          <a href="https://youtu.be/p5kHmcwvwT4?si=x-u9V5sgAS-6DYXg"
-            >Click To Listen</a
-          >
         </div>
+      </div>
+      <br />
+      <div class="video-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/-qHDsh0iTGs?si=RQ5Ho-7sDc_D_zSj"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        >
+        </iframe>
       </div>
 
       <div class="song">
-        <a href="images/music/opm/pasilyo.jpg" target="_self">
+        <a href="images/music/opm/pasilyo.jpg" target="winImage">
           <img
             src="images/music/opm/pasilyo.jpg"
             alt="Pasilyo by Sunkissed Lola"
@@ -691,9 +1010,6 @@
             (pasilyo). Its soulful melody and romantic lyrics have made it the
             definitive modern Filipino wedding anthem.
           </p>
-          <a href="https://youtu.be/XToA-1dZYWA?si=7QLBAS232aVAQv8A"
-            >Click To Listen</a
-          >
         </div>
       </div>
     </div>
@@ -705,7 +1021,9 @@
     <a href="music.html">Music</a>&nbsp;&nbsp;
     <a href="movie.html">Movies</a>&nbsp;&nbsp;
     <a href="tv.html">TV Shows</a>&nbsp;&nbsp;
-    <a href="index.html#pages">Blogs</a>
+    <a href="index.html#pages">Blogs</a>&nbsp;&nbsp;
+    <a href="places.html">Collage</a>&nbsp;&nbsp;
+    <a href="interests.html">Interest</a>
 
     <!-- Final Go Back to Top at bottom -->
     <div id="bottom" style="margin: 40px 0">
