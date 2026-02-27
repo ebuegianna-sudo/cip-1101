@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Blog 1</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* RESET AND BASE */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html,
+      body {
+        height: 100%;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f7f7f7;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      /* HEADER */
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 40px;
+        background-color: #fff;
+        width: 100%;
+      }
+
+      .header a {
+        margin-left: 15px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+      }
+
+      /* HORIZONTAL RULE */
+      hr {
+        border: none;
+        height: 5px;
+        background-color: #e1cead;
+        width: 100%;
+        display: block;
+        flex-shrink: 0;
+      }
+
+      /* CONTENT */
+      .content {
+        flex: 1;
+        max-width: 900px;
+        width: 100%;
+        margin: 40px auto;
+        padding: 0 20px;
+      }
+
+      h1,
+      h3,
+      h4 {
+        margin: 20px 0 10px;
+      }
+
+      p {
+        margin-bottom: 20px;
+      }
+
+      /* IMAGE ALIGNMENTS */
+      .img-left {
+        float: left;
+        margin: 0 20px 20px 0;
+        width: 250px;
+      }
+
+      .img-right {
+        float: right;
+        margin: 0 0 20px 20px;
+        width: 250px;
+      }
+
+      .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .caption {
+        font-size: 14px;
+        color: #555;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      /* NAVIGATION LINKS */
+      .blog-links {
+        text-align: center;
+        margin: 40px 0;
+      }
+
+      .blog-links a {
+        display: inline-block;
+        margin: 0 10px;
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+      }
+
+      /* BACK TO TOP BUTTON */
+      .back-to-top {
+        display: inline-block;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e1cead;
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin: 20px 0;
+      }
+
+      .back-to-top-essay {
+        display: block;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e1cead;
+        border-radius: 5px;
+        padding: 10px 20px;
+        width: fit-content;
+        margin: 20px auto;
+      }
+
+      /* FOOTER */
+      footer {
+        background-color: #e1cead;
+        text-align: center;
+        padding: 20px 0;
+        width: 100%;
+        margin-top: auto; /* Stick footer at bottom */
+      }
+
+      footer a {
+        color: black;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+
+      /* CENTER IMAGES IN CONTENT */
+      .center-img {
+        display: block;
+        margin: 0 auto 20px auto;
+        max-width: 100%;
+      }
+
+      .categories {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+      }
+
+      .categories a {
+        text-decoration: none;
+        color: black;
+      }
+
+      /* TEST */
+      .jump-to-bottom {
+        display: inline-block;
+        margin: 20px 0;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e1cead;
+        border-radius: 5px;
+        padding: 10px 20px;
+      }
+
+      .back-to-top-blog {
+        display: inline-block;
+        margin: 20px 0;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e1cead;
+        border-radius: 5px;
+        padding: 10px 20px;
+      }
+
+      .jump-to-bottom {
+        display: inline-block;
+        margin: 20px 0;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e1cead;
+        border-radius: 5px;
+        padding: 10px 20px;
+      }
+
+      .button-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header id="top" class="header">
+      <a href="images/index/PennyWrinkleLogo.png" target="winImage">
+        <img
+          src="images/index/PennyWrinkleLogo.png"
+          alt="Penny Wrinkle Logo"
+          title="Penny Wrinkle Logo PNG"
+          height="50"
+        />
+      </a>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="biography.html">About Me</a>
+        <a href="#pages">Pages</a>
+        <a href="index.html#pages">Blogs</a>
+        <a href="photogallery.html">Gallery</a>
+        <a href="media.html">Media</a>
+        <a href="places.html">Collage</a>
+        <a href="interests.html">Interest</a>
+      </div>
+    </header>
+
+    <hr />
+
+    <!-- MAIN CONTENT -->
+    <div class="content">
+      <h1>Music Speaks What Words Cannot</h1>
+      <h4>Written By: <b>Penny Wrinkle</b></h4>
+      <h4>Date: <b>02/26/2026</b></h4>
+      <a href="" target="winImage">
+        <img src="" alt="" title="" class="center-img" />
+      </a>
+
+      <!--TEST-->
+      <h2>Browse:</h2>
+      <div class="categories">
+        <a href="#part1"><h3>Part 1</h3></a>
+        <a href="#part2"><h3>Part 2</h3></a>
+        <a href="#part3"><h3>Part 3</h3></a>
+      </div>
+      <br />
+      <a href="#bottom" class="back-to-top-essay">Jump to the Bottom</a>
+      <br />
+      <nr></nr>
+      <br />
+      <h3 id="part1">Music: The Universal Language of Emotion</h3>
+      <div class="clearfix">
+        <a href="images/interest/sheet.avif" target="winImage">
+          <img
+            src="images/interest/sheet.avif"
+            class="img-right"
+            alt="Sheet Music Image"
+            title="Sheet Music Image"
+            style="width: 250px"
+          />
+        </a>
+        <p>
+          <b>Music is often called a universal language, and for good reason</b
+          >. No matter where we come from or what language we speak,
+          <b>music has the power to make us feel</b>. A song in a foreign tongue
+          can still move us to tears, make us dance, or fill us with peace. Even
+          when we do not understand the literal meaning of the lyrics,
+          <b
+            >we understand the emotion carried in the melody, the rhythm, and
+            the arrangement</b
+          >. The way a piece swells during a chorus, softens during a verse, or
+          builds toward a climax communicates something deeply human.
+          <b
+            >Music reflects culture, history, and lived experience; it carries
+            the stories of its writers and performers</b
+          >. When we sing along, even quietly to ourselves, we join in those
+          stories.
+          <b
+            >It can transport us to a different time or place, evoking memories
+            we didn’t even realize were there</b
+          >. Sometimes, a single note or chord can capture a feeling more
+          perfectly than a thousand words ever could. Music can comfort us when
+          we are sad, energize us when we are tired, and bring people together
+          in ways nothing else can. In that way,<b
+            >music becomes a shared language—one spoken not just in words, but
+            in feeling.</b
+          >
+        </p>
+      </div>
+      <div class="button-row">
+        <a href="#bottom" class="jump-to-bottom">Go to Bottom</a>
+        <a href="#top" class="back-to-top-blog">Go Back to Top</a>
+      </div>
+      <br />
+
+      <img
+        src="images/index/border.png"
+        alt="Border"
+        title="Border PNG"
+        class="center-img"
+        width="600"
+      />
+
+      <h3 id="part2">Keys, Colors, and the Pictures we hear</h3>
+      <div class="clearfix">
+        <a href="images/interest/imagine.jpg" target="winImage">
+          <img
+            src="images/interest/imagine.jpg"
+            class="img-left"
+            alt="Woman Image"
+            title="Woman Image"
+          />
+        </a>
+        <p>
+          <b
+            >Music also has the remarkable ability to make us see and feel
+            specific things</b
+          >. Certain notes and keys seem to carry emotional colors. For example,
+          the key of <b>D </b>often feels bright and tender, frequently used in
+          love songs that evoke images of roses or heartfelt confessions. My
+          favorite key is <b>D-flat</b>. I recently learned that it is also my
+          friend’s father’s favorite note; he used to play in a band, and
+          whenever he tested a piano’s sound, <b>D-flat</b> was the first note
+          he played because he said it sounded romantic. The chord
+          <b>D-flat major</b>, in particular, makes me envision a sunset—the sky
+          glowing in warm shades of gold and pink as the day gently fades. One
+          famous piano piece written in <b>D-flat major</b> is
+          <b>Clair de Lune by Claude Debussy</b>, whose flowing melody
+          <b>feels like moonlight shimmering on water</b>.
+        </p>
+      </div>
+
+      <br />
+
+      <div class="clearfix">
+        <a href="images/interest/queen.jpg" target="winImage">
+          <img
+            src="images/interest/queen.jpg"
+            class="img-right"
+            alt="Queen Band Image"
+            title="Queen Band Image"
+            style="width: 300px"
+          />
+        </a>
+        <p>
+          There are also keys that seem to convey very <b>distinct</b> emotions.
+          The key of G, especially G minor, often carries a sense of
+          <b>longing or loneliness</b>. A well-known example is
+          <b> Back to Black by Amy Winehouse</b>, which is written in G minor
+          and expresses heartbreak and emotional emptiness. The darker tonal
+          center and the way minor scales lower certain notes create
+          <b>tension and melancholy</b>, which our ears naturally interpret as
+          sadness or solitude. On the other hand, the key of F major often
+          sounds<b>heroic and triumphant</b>. A powerful example is<b>
+            We Are the Champions by Queen</b
+          >. F major sits comfortably within a bright vocal range and uses
+          strong, stable harmonies that feel grounded and victorious. Major keys
+          generally sound open and resolved because of their interval structure,
+          which our brains associate with<b>confidence and clarity</b>. Through
+          patterns of harmony, tension, and release,<b>
+            music shapes not only what we hear but what we feel and imagine</b
+          >.
+        </p>
+      </div>
+      <div class="button-row">
+        <a href="#bottom" class="jump-to-bottom">Go to Bottom</a>
+        <a href="#top" class="back-to-top-blog">Go Back to Top</a>
+      </div>
+      <br />
+
+      <img
+        src="images/index/border.png"
+        alt="Border"
+        title="Border PNG"
+        class="center-img"
+        width="600"
+      />
+
+      <h3 id="part3">When Sound Becomes Meaning</h3>
+      <div class="clearfix">
+        <a href="images/interest/gramophone.jpg" target="winImage">
+          <img
+            src="images/interest/gramophone.jpg"
+            class="img-right"
+            alt="Gramophone Image"
+            title="Gramophone Image"
+          />
+        </a>
+        <p>
+          In the end,<b
+            >music truly is a language—a language that transcends words,
+            borders, and time</b
+          >. <b>It communicates what is often impossible to put into speech</b>,
+          expressing joy, sorrow, love, and longing in ways that connect us all.
+          Through melody, harmony, rhythm, and dynamics,<b>
+            music allows us to feel what others have felt, to see what others
+            have imagined, and to share in experiences we might never live
+            ourselves</b
+          >. It <b>teaches us empathy</b> by letting us inhabit someone else’s
+          emotions and perspective, whether through a heart-wrenching ballad, a
+          soaring orchestral piece, or even a simple piano chord.<b
+            >Music preserves culture, memory, and identity</b
+          >, and it evolves as we evolve, reflecting both personal and
+          collective stories.
+          <b
+            >Every note, every key, and every chord carries meaning, capable of
+            sparking imagery, emotion, and even transformation in those who
+            listen</b
+          >. In a world where words sometimes fail, <b>music fills the gaps</b>.
+          It is more than entertainment—it is
+          <b>expression, connection, and understanding</b>. Simply put,
+          <b>music is great</b>.
+        </p>
+      </div>
+
+      <!-- PAGES NAVIGATION -->
+      <div class="blog-links" id="pages">
+        <h3 id="bottom">Navigate:</h3>
+        <a href="index.html">Home</a>
+        <a href="interests.html">Interest</a>
+        <a href="blog2.html">Blog 2</a>
+        <a href="blog3.html">Blog 3</a>
+        <a href="media.html">Media</a>
+        <a href="places.html">Collage</a>
+      </div>
+
+      <!-- BACK TO TOP BUTTON -->
+      <div style="text-align: center">
+        <a href="#top" class="back-to-top">Go back to the top</a>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; 2026 Penny Wrinkler. All Rights Reserved.</p>
+      <p>
+        <a href="index.html">Home</a> | <a href="contact.html">Contact</a> |
+        <a href="biography.html">About Me</a>
+      </p>
+    </footer>
+  </body>
+</html>
