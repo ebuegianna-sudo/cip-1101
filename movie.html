@@ -92,6 +92,25 @@
         font-weight: bold;
       }
 
+      .video-container {
+        max-width: 900px; /* same as your description/movie cards */
+        width: 100%; /* responsive */
+        margin: 20px auto; /* center horizontally */
+        background-color: white;
+        border: 1px solid #e1cead;
+        border-radius: 8px;
+        padding: 20px;
+        display: flex;
+        justify-content: center; /* center iframe */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* optional */
+      }
+
+      .video-container iframe {
+        width: 100%; /* fill the container */
+        height: 500px; /* you can adjust height */
+        border-radius: 5px;
+      }
+
       .back-to-top {
         display: inline-block;
         margin: 20px 0;
@@ -196,13 +215,15 @@
         <a href="index.html#pages">Blogs</a>
         <a href="photogallery.html">Gallery</a>
         <a href="media.html">Media</a>
+        <a href="places.html">Collage</a>
+        <a href="interests.html">Interest</a>
       </div>
     </div>
 
     <hr />
 
     <h1>My Favorite Movies</h1>
-    <a href="images/movie/cinema.jpg" target="_self">
+    <a href="images/movie/cinema.jpg" target="winImage">
       <img
         src="images/movie/cinema.jpg"
         alt="Cinema"
@@ -214,7 +235,7 @@
 
     <!-- Categories -->
     <div class="categories">
-      <h2>Categories:</h2>
+      <h2>Browse:</h2>
       <a href="#fantasy"><h3>Fantasy</h3></a>
       <a href="#classic"><h3>Classic</h3></a>
       <a href="#romance"><h3>Romance</h3></a>
@@ -228,9 +249,32 @@
     <nr></nr>
     <!-- FANTASY -->
     <h2 id="fantasy">Fantasy</h2>
+
+    <div class="video-container">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/MAviyhpn7Lg?si=QFCg8myuFZbSJm8h"
+        title="Youtube video player"
+        frameborder="0"
+        allow="
+          accelerometer;
+          autoplay;
+          clipboard-write;
+          encrypted-media;
+          gyroscope;
+          picture-in-picture;
+          web-share;
+        "
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      >
+      </iframe>
+    </div>
+
     <div class="movie-container">
       <div class="movie">
-        <a href="images/movie/fantasy/wonka.webp" target="_self">
+        <a href="images/movie/fantasy/wonka.webp" target="winImage">
           <img
             src="images/movie/fantasy/wonka.webp"
             alt="Charlie and the Chocolate Factory (2005)"
@@ -244,6 +288,7 @@
           <p>
             <b>Starring: </b>Johnny Depp, Freddie Highmore, Helena Bonham Carter
           </p>
+          <br />
           <p>
             <b>Synopsis: </b>A young boy named Charlie Bucket wins a rare golden
             ticket to tour the secretive and magical chocolate factory owned by
@@ -251,15 +296,34 @@
             experiences a world of candy wonders while Wonka searches for a
             worthy heir to his empire.
           </p>
-
-          <a href="https://youtu.be/lzmzZaB0kss?si=c5mFPAE2xQMVcqFf"
-            >Watch a Clip</a
-          >
         </div>
       </div>
 
+      <br />
+
+      <div class="video-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/nArYEd3gtas?si=tsUkOqEwH5X2SAtc"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+
       <div class="movie">
-        <a href="images/movie/fantasy/alice.webp" target="_self">
+        <a href="images/movie/fantasy/alice.webp" target="winImage">
           <img
             src="images/movie/fantasy/alice.webp"
             alt="Alice in Wonderland (2010)"
@@ -274,6 +338,7 @@
             <b>Starring: </b>Mia Wasikowska, Johnny Depp, Helena Bonham Carter,
             Anne Hathaway
           </p>
+          <br />
           <p>
             <b>Synopsis: </b>Nineteen-year-old Alice returns to the whimsical
             Underland, a place she visited as a child but has since forgotten.
@@ -281,14 +346,34 @@
             a prophecy by slaying the Jabberwocky and ending the Red Queen's
             tyrannical reign.
           </p>
-          <a href="https://youtu.be/nArYEd3gtas?si=oIPzDB5u76vNPDJ9"
-            >Watch a Clip</a
-          >
         </div>
       </div>
 
+      <br />
+
+      <div class="video-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/bKyJBvQ7GTw?si=ZL82DguB-Ub035d0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+
       <div class="movie">
-        <a href="images/movie/fantasy/nanny.webp" target="_self">
+        <a href="images/movie/fantasy/nanny.webp" target="winImage">
           <img
             src="images/movie/fantasy/nanny.webp"
             alt="Nanny McPhee (2005)"
@@ -303,15 +388,13 @@
             <b>Starring: </b>Emma Thompson, Colin Firth, Thomas Brodie-Sangster
           </p>
           <p>
+            <br />
             <b>Synopsis: </b>A widowed father struggles to manage his seven
             incredibly mischievous children who have driven away every previous
             caregiver. Everything changes when the mysterious and magical Nanny
             McPhee arrives, using her enchantments to transform the children's
             behavior through five essential lessons.
           </p>
-          <a href="https://youtu.be/bKyJBvQ7GTw?si=PeRKs4JPjddyNpJw"
-            >Watch a Clip</a
-          >
         </div>
       </div>
     </div>
@@ -321,14 +404,46 @@
 
     <br />
     <br />
-    <br />
+
+    <div style="text-align: center; margin: 20px 0">
+      <img
+        src="images/index/border.png"
+        alt="Border"
+        title="Border PNG"
+        width="600px;"
+      />
+    </div>
+
     <br />
 
     <!-- CLASSIC  -->
     <h2 id="classic">Classic</h2>
+
+    <div class="video-container">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/2Yq9Ebipbb8?si=i6KTfrrpfTjrA_fs"
+        title="YouTube video player"
+        frameborder="0"
+        allow="
+          accelerometer;
+          autoplay;
+          clipboard-write;
+          encrypted-media;
+          gyroscope;
+          picture-in-picture;
+          web-share;
+        "
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      >
+      </iframe>
+    </div>
+
     <div class="movie-container">
       <div class="movie">
-        <a href="images/movie/classic/poppins1.jpg" target="_self">
+        <a href="images/movie/classic/poppins1.jpg" target="winImage">
           <img
             src="images/movie/classic/poppins1.jpg"
             alt="Mary Poppins (1964)"
@@ -341,20 +456,42 @@
           <p><b>Director: </b>Robert Stevenson</p>
           <p><b>Starring: </b>Julie Andrews, Dick Van Dyke, David Tomlinson</p>
           <p>
+            <br />
             <b>Synopsis: </b>When a magical nanny descends from the sky using
             her umbrella, she takes charge of the two neglected children of a
             cold London banker. Through whimsical adventures and catchy songs,
             she helps the family rediscover the joy of life and the importance
             of spending time together.
           </p>
-          <a href="https://youtu.be/_L4qauTiCY4?si=sri80I8aojc3XfFI"
-            >Watch a Clip</a
-          >
         </div>
       </div>
 
+      <br />
+
+      <div class="video-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/DGABqdbtQnA?si=uXzueevff77a8Yt3"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+
       <div class="movie">
-        <a href="images/movie/classic/sound.jpg" target="_self">
+        <a href="images/movie/classic/sound.jpg" target="winImage">
           <img
             src="images/movie/classic/sound.jpg"
             alt="The Sound of Music (1965)"
@@ -367,20 +504,41 @@
           <p><b>Director: </b>Robert Wise</p>
           <p><b>Starring: </b>Julie Andrews, Christopher Plummer</p>
           <p>
+            <br />
             <b>Synopsis: </b>Maria, a lively young woman struggling to become a
             nun, is sent to serve as a governess for the seven children of a
             stern, widowed naval officer. She brings music and laughter back
             into their lives, but the family's happiness is soon threatened by
             the onset of World War II and the Nazi annexation of Austria.
           </p>
-          <a href="https://youtu.be/drnBMAEA3AM?si=2cImotpYQpeRmsQv"
-            >Watch a Clip</a
-          >
         </div>
       </div>
 
+      <br />
+
+      <div class="video-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/1TgNVNoxPw8?si=Ooq27_rQEFUyy8Jz"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+
       <div class="movie">
-        <a href="images/movie/classic/barbie.jpg" target="_self">
+        <a href="images/movie/classic/barbie.jpg" target="winImage">
           <img
             src="images/movie/classic/barbie.jpg"
             alt="Barbie (2023)"
@@ -393,15 +551,13 @@
           <p><b>Director: </b>Greta Gerwig</p>
           <p><b>Starring: </b>Margot Robbie, Ryan Gosling, America Ferrera</p>
           <p>
+            <br />
             <b>Synopsis: </b>After experiencing a series of strange
             "imperfections," Stereotypical Barbie leaves the colorful paradise
             of Barbieland to seek answers in the Real World. Her journey of
             self-discovery challenges her views on perfection, womanhood, and
             the complexities of human emotion.
           </p>
-          <a href="https://youtu.be/1TgNVNoxPw8?si=jLTw-fIr40ZWN3DP"
-            >Watch a Clip</a
-          >
         </div>
       </div>
     </div>
@@ -411,14 +567,46 @@
 
     <br />
     <br />
-    <br />
+
+    <div style="text-align: center; margin: 20px 0">
+      <img
+        src="images/index/border.png"
+        alt="Border"
+        title="Border PNG"
+        width="600px;"
+      />
+    </div>
+
     <br />
 
     <!-- ROMANCE -->
     <h2 id="romance">Romance</h2>
+
+    <div class="video-container">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/OHE8TUfo7MU?si=EFkKnd7MsTg7xzsQ"
+        title="YouTube video player"
+        frameborder="0"
+        allow="
+          accelerometer;
+          autoplay;
+          clipboard-write;
+          encrypted-media;
+          gyroscope;
+          picture-in-picture;
+          web-share;
+        "
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      >
+      </iframe>
+    </div>
+
     <div class="movie-container">
       <div class="movie">
-        <a href="images/movie/romance/ten.jpg" target="_self">
+        <a href="images/movie/romance/ten.jpg" target="winImage">
           <img
             src="images/movie/romance/ten.jpg"
             alt="10 Things I Hate About You (1999)"
@@ -435,6 +623,7 @@
           <p>
             <b>Starring: </b>Julia Stiles, Heath Ledger, Joseph Gordon-Levitt
           </p>
+          <br />
           <p>
             <b>Synopsis: </b>In this modern retelling of Shakespeare’s The
             Taming of the Shrew, a popular high school girl is forbidden from
@@ -442,14 +631,34 @@
             is hatched to pay the school's "bad boy" to woo Kat, leading to an
             unexpected and complicated romance.
           </p>
-          <a href="https://youtu.be/nebaBmsafv8?si=oOwI1brsLChZD_db"
-            >Watch a Clip</a
-          >
         </div>
       </div>
 
+      <br />
+
+      <div class="video-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/M3BVwqL4B4E?si=RnwR3-h7kx0J4lRD"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+
       <div class="movie">
-        <a href="images/movie/romance/dates.jpg" target="_self">
+        <a href="images/movie/romance/dates.jpg" target="winImage">
           <img
             src="images/movie/romance/dates.jpg"
             alt="50 First Dates (2004)"
@@ -461,6 +670,7 @@
           <p><b>Sub-genre: </b>Rom-com, Drama, Slapstick Comedy.</p>
           <p><b>Director: </b>Peter Segal</p>
           <p><b>Starring: </b>Adam Sandler, Drew Barrymore</p>
+          <br />
           <p>
             <b>Synopsis: </b>Henry falls deeply in love with Lucy, only to
             discover that she suffers from short-term memory loss and forgets
@@ -468,14 +678,35 @@
             every single morning, creating a series of heartwarming and comedic
             first dates to sustain their relationship.
           </p>
-          <a href="https://youtu.be/M3BVwqL4B4E?si=DPafStGsI2XgkE9L"
-            >Watch a Clip</a
-          >
         </div>
       </div>
 
+      <br />
+
+      <div class="video-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/2zHHkSu1br4?si=lsQHJsh6UjHyRQAG"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+
       <div class="movie">
-        <a href="images/movie/romance/gatsby.webp" target="_self">
+        <a href="images/movie/romance/gatsby.webp" target="winImage">
           <img
             src="images/movie/romance/gatsby.webp"
             alt="The Great Gatsby (2013)"
@@ -487,6 +718,7 @@
           <p><b>Sub-genre: </b>Period Drama, Tragedy, Literary Realism.</p>
           <p><b>Director: </b>Baz Luhrmann</p>
           <p>
+            <br />
             <b>Starring: </b>Leonardo DiCaprio, Tobey Maguire, Carey Mulligan
           </p>
           <p>
@@ -496,9 +728,6 @@
             front for his desperate obsession to reunite with Daisy Buchanan,
             leading to a tragic tale of wealth, love, and disillusionment.
           </p>
-          <a href="https://youtu.be/yH7eRHHVGGA?si=wbwSmMOMt6whSJ46"
-            >Watch a Clip</a
-          >
         </div>
       </div>
     </div>
@@ -508,14 +737,46 @@
 
     <br />
     <br />
-    <br />
+
+    <div style="text-align: center; margin: 20px 0">
+      <img
+        src="images/index/border.png"
+        alt="Border"
+        title="Border PNG"
+        width="600px;"
+      />
+    </div>
+
     <br />
 
     <!-- MYSTERY -->
     <h2 id="mystery">Mystery</h2>
+
+    <div class="video-container">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/1d0Zf9sXlHk?si=EUw6OgDi00aWjyRq"
+        title="YouTube video player"
+        frameborder="0"
+        allow="
+          accelerometer;
+          autoplay;
+          clipboard-write;
+          encrypted-media;
+          gyroscope;
+          picture-in-picture;
+          web-share;
+        "
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      >
+      </iframe>
+    </div>
+
     <div class="movie-container">
       <div class="movie">
-        <a href="images/movie/mystery/enola.jpg" target="_self">
+        <a href="images/movie/mystery/enola.jpg" target="winImage">
           <img
             src="images/movie/mystery/enola.jpg"
             alt="Enola Holmes 1 (2020)"
@@ -527,6 +788,7 @@
           <p><b>Sub-genre: </b>Action-Adventure, Crime, Period Mystery.</p>
           <p><b>Director: </b>Harry Bradbeer</p>
           <p><b>Starring: </b>Millie Bobby Brown, Henry Cavill, Sam Claflin</p>
+          <br />
           <p>
             <b>Synopsis: </b>When Enola Holmes wakes up to find her mother
             missing, she embarks on a dangerous journey to London to find her.
@@ -534,14 +796,35 @@
             detective in her own right as she unravels a conspiracy surrounding
             a young runaway Lord.
           </p>
-          <a href="https://youtu.be/qTSm5gIQtBA?si=yohk6UW64CbuAKVJ"
-            >Watch a Clip</a
-          >
         </div>
       </div>
 
+      <br />
+
+      <div class="video-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/DjNVqYjp3E4?si=dJkrXO1Rb9aCvql2"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+
       <div class="movie">
-        <a href="images/movie/mystery/drew.webp" target="_self">
+        <a href="images/movie/mystery/drew.webp" target="winImage">
           <img
             src="images/movie/mystery/drew.webp"
             alt="Nancy Drew (2007)"
@@ -553,6 +836,7 @@
           <p><b>Sub-genre: </b>Comedy, Family, Teen Detective.</p>
           <p><b>Director: </b>Andrew Fleming</p>
           <p><b>Starring: </b>Emma Roberts, Josh Flitter, Max Thieriot</p>
+          <br />
           <p>
             <b>Synopsis: </b>The teenage sleuth Nancy Drew travels to Los
             Angeles with her father and stumbles upon a long-unsolved mystery
@@ -560,14 +844,35 @@
             stop, she uses her wits and classic detective skills to piece
             together clues hidden within an old mansion.
           </p>
-          <a href="https://youtu.be/PdzjDn5zVXo?si=caR3QB02l5lsPH3M"
-            >Watch a Clip</a
-          >
         </div>
       </div>
 
+      <br />
+
+      <div class="video-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/ZfLFOKGIG-M?si=J4-GPK5IIsNrOXyV"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+
       <div class="movie">
-        <a href="images/movie/mystery/pikachu.jpg" target="_self">
+        <a href="images/movie/mystery/pikachu.jpg" target="winImage">
           <img
             src="images/movie/mystery/pikachu.jpg"
             alt="Pokémon Detective Pikachu (2019)"
@@ -582,6 +887,7 @@
             <b>Starring: </b>Ryan Reynolds (voice), Justice Smith, Kathryn
             Newton
           </p>
+          <br />
           <p>
             <b>Synopsis: </b>In a city where humans and Pokémon live together,
             Tim Goodman teams up with a wisecracking, coffee-addicted Pikachu
@@ -589,9 +895,6 @@
             mystery to find Tim’s missing father, uncovering a plot that
             threatens the peaceful coexistence of their entire world.
           </p>
-          <a href="https://youtu.be/ZfLFOKGIG-M?si=hD2WRwJitOoilbm3"
-            >Watch a Clip</a
-          >
         </div>
       </div>
     </div>
@@ -601,14 +904,46 @@
 
     <br />
     <br />
-    <br />
+
+    <div style="text-align: center; margin: 20px 0">
+      <img
+        src="images/index/border.png"
+        alt="Border"
+        title="Border PNG"
+        width="600px;"
+      />
+    </div>
+
     <br />
 
     <!-- ANIME -->
     <h2 id="anime">Anime</h2>
+
+    <div class="video-container">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/70NhEBzLKU8?si=OaRZ0OMwz2CokGYs"
+        title="YouTube video player"
+        frameborder="0"
+        allow="
+          accelerometer;
+          autoplay;
+          clipboard-write;
+          encrypted-media;
+          gyroscope;
+          picture-in-picture;
+          web-share;
+        "
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      >
+      </iframe>
+    </div>
+
     <div class="movie-container">
       <div class="movie">
-        <a href="images/movie/anime/spirit.webp" target="_self">
+        <a href="images/movie/anime/spirit.webp" target="winImage">
           <img
             src="images/movie/anime/spirit.webp"
             alt="Spirited Away (2001)"
@@ -623,6 +958,7 @@
             <b>Starring (English Dub): </b>Daveigh Chase, Jason Marsden, Suzanne
             Pleshette
           </p>
+          <br />
           <p>
             <b>Synopsis: </b>While moving to a new home, young Chihiro and her
             parents wander into a magical realm where her parents are
@@ -630,14 +966,35 @@
             bathhouse ruled by a cruel witch and navigate a world filled with
             strange spirits and forgotten gods.
           </p>
-          <a href="https://youtu.be/70NhEBzLKU8?si=2CVdK5dcsMjANZsT"
-            >Watch a Clip</a
-          >
         </div>
       </div>
 
+      <br />
+
+      <div class="video-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Guxx_KTm_6M?si=q340JDqWY_ucsda6"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+
       <div class="movie">
-        <a href="images/movie/anime/howl.jpg" target="_self">
+        <a href="images/movie/anime/howl.jpg" target="winImage">
           <img
             src="images/movie/anime/howl.jpg"
             alt="Howl’s Moving Castle (2004)"
@@ -652,6 +1009,7 @@
             <b>Starring (English Dub): </b>Emily Mortimer, Christian Bale, Billy
             Crystal
           </p>
+          <br />
           <p>
             <b>Synopsis: </b>After a spiteful witch curses her with the body of
             an old woman, Sophie seeks out the legendary wizard Howl for help.
@@ -659,14 +1017,35 @@
             becomes part of an extraordinary family and works to break both her
             curse and Howl’s own mysterious contract.
           </p>
-          <a href="https://youtu.be/Guxx_KTm_6M?si=Wl7PAPOcKeHI_PdC"
-            >Watch a Clip</a
-          >
         </div>
       </div>
 
+      <br />
+
+      <div class="video-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/igVXQT4HrEo?si=gmKyQIXio2AWZIGl"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+
       <div class="movie">
-        <a href="images/movie/anime/totoro.jpg" target="_self">
+        <a href="images/movie/anime/totoro.jpg" target="winImage">
           <img
             src="images/movie/anime/totoro.jpg"
             alt="My Neighbor Totoro (1988)"
@@ -678,6 +1057,7 @@
           <p><b>Sub-genre: </b>Family, Slice-of-life, Magical Realism.</p>
           <p><b>Director: </b>Hayao Miyazaki</p>
           <p><b>Starring: </b>Dakota Fanning, Elle Fanning (Disney dub)</p>
+          <br />
           <p>
             <b>Synopsis: </b>Two young sisters move to a rural home to be closer
             to their hospitalized mother and soon discover that the nearby
@@ -685,9 +1065,6 @@
             fluffy forest protector named Totoro, who leads them on magical
             adventures that help them cope with their family's uncertainty.
           </p>
-          <a href="https://youtu.be/igVXQT4HrEo?si=Z73ynemm0rbpq5Sq"
-            >Watch a Clip</a
-          >
         </div>
       </div>
     </div>
@@ -699,9 +1076,10 @@
     <a href="music.html">Music</a>&nbsp;&nbsp;
     <a href="movie.html">Movies</a>&nbsp;&nbsp;
     <a href="tv.html">TV Shows</a>&nbsp;&nbsp;
-    <a href="index.html#pages">Blogs</a>
+    <a href="index.html#pages">Blogs</a>&nbsp;&nbsp;
+    <a href="places.html">Collage</a>&nbsp;&nbsp;
+    <a href="interests.html">Interest</a>
 
-    <!-- Final Go Back to Top at bottom -->
     <div id="bottom" style="margin: 40px 0">
       <a href="#top" class="back-to-top">Go Back to Top</a>
     </div>
