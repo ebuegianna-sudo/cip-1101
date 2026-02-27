@@ -4,7 +4,7 @@
     <title>Landing Page</title>
     <link rel="stylesheet" href="style.css" />
     <style>
-      .back-to-top {
+      .back-to-top, .jump-to-bottom {
         text-decoration: none;
         font-weight: bold;
         color: black;
@@ -12,6 +12,103 @@
         border-radius: 5px;
         padding: 10px 20px;
         display: inline-block;
+      }
+
+      .blog-card-video {
+            width: 620px; 
+            background-color: white; 
+            border: 1px solid #e1cead; 
+            padding: 20px; 
+            text-align: center; 
+            margin: 30px auto;
+            border-radius: 8px;
+
+      }
+
+      .blog-card {
+        width: 260px; 
+        background-color: white; 
+        border: 1px solid #e1cead; 
+        padding: 20px; 
+        text-align: center;
+      }
+
+      .categories {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 10px;
+      }
+
+      .categories a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 18px; /* looks like h3 */
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+
+      .jump-to-bottom-page {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e1cead;
+        border-radius: 5px;
+        padding: 10px 20px;
+        display: inline-block;
+        margin: 20px 0;
+        margin-left: 300px;
+      }
+
+
+      .back-to-top-page {
+        display: inline-block;
+        margin: 20px 0;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e1cead;
+        border-radius: 5px;
+        padding: 10px 20px;
+
+        margin-left: 610px; 
+        margin-right: 300px;
+      }
+
+       
+
+    .jump-to-bottom-video {
+     text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e1cead;
+        border-radius: 5px;
+        padding: 10px 20px;
+        display: inline-block;
+        margin: 20px 0;
+        margin-left: 300px;
+    }
+
+
+    .back-to-top-video {
+    display: inline-block;
+        margin: 20px 0;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e1cead;
+        border-radius: 5px;
+        padding: 10px 20px;
+
+        margin-left: 610px; 
+        margin-right: 300px;
+    }
+
+      .button-row {
+        display: flex;
+        justify-content: space-between; /* one left, one right */
+        align-items: center; /* same vertical level */
+        margin: 20px 0;
       }
     </style>
   </head>
@@ -27,7 +124,7 @@
   "
 >
   <!-- LOGO -->
-  <a href="images/index/PennyWrinkleLogo.png" target="_self">
+  <a href="images/index/PennyWrinkleLogo.png" target="winImage">
     <img
       src="images/index/PennyWrinkleLogo.png"
       height="50"
@@ -44,8 +141,9 @@
     <a href="#pages">Pages</a>&nbsp;&nbsp;
     <a href="index.html#pages">Blogs</a>&nbsp;&nbsp;
     <a href="photogallery.html">Gallery</a>&nbsp;&nbsp;
-    <a href="media.html">Media</a>
-    <a href="places.html">Collage</a>
+    <a href="media.html">Media</a>&nbsp;&nbsp;
+    <a href="places.html">Collage</a>&nbsp;&nbsp;
+        <a href="interests.html">Interest</a>
   </div>
 </div>
 
@@ -66,12 +164,48 @@
         the world is the way it is and aren’t afraid to sit with those thoughts.
         Here, curiosity, reflection, and personal experiences are given room to
         breathe. Ultimately, Soul Pen is for those who simply love to read—and
-        to feel. I am an anonymous computer science student, and this serves as
-        an outlet of my thoughts. Come and join in. Happy Reading!
-      </h4>
+        to feel. Happy Reading!
+      </h3>
+
+      <br>
+      <br>
+      <br>
+
+      <h2>Browse:</h2>
+    <div class="categories">
+      <a href="#part1">Intro Video</a>
+      <a href="#pages">Blogs</a>
+      <a href="#part3">Personal Works</a>
+      <a href="#part4">Resume</a>
+    </div>
+<br>
+    <br>
+    <br>
+    <br>
+
+      <div style="text-align: center">
+        <a href="#bottom" class="jump-to-bottom">Jump to Bottom</a>
+      </div>
     </div>
     <br>
-    <div style="text-align: center; margin-top: 20px">
+    <br />
+
+    <div style="text-align: center; margin: 20px 0">
+      <img
+        src="images/index/border.png"
+        alt="Border"
+        title="Border Image"
+        width="600px"
+      />
+    </div>
+
+    <h2 id="part1">About Me</h2>
+
+    <!-- VIDEO BLOG CARD -->
+<div class="blog-card-video">
+  <h3>Welcome to Me!</h3>
+  <h4>Learn more about Penny Wrinkle</h4>
+  <div style="text-align: center; margin-top: 20px">
       <a
         href="biography.html"
         style="
@@ -88,62 +222,171 @@
         About Author
       </a>
     </div>
+  <video width="600" height="338" controls style="border-radius: 5px; margin-top: 10px;">
+    <source src="images/added/PennyWrinkle.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
 
+<div class="button-row">
+      <a href="#bottom" class="jump-to-bottom-video">Go to Bottom</a>
+      <a href="#top" class="back-to-top-video">Go Back to Top</a>
+    </div>
+
+    <br>
     <br />
-    <br />
+
+    <h2 id="pages">Explore My Works</h2>
+    <h4>These works contain a piece of my experiences and perspectives. Have a read!</h4>
+
+    <div class="blog-cards-container" style="display: flex; justify-content: center; gap: 20px; margin: 30px 0; flex-wrap: nowrap;">
+  <!-- BLOG CARD 1 -->
+  <div class="blog-card">
+    <a href="images/index/numbers.webp" target="winImage"><img src="images/index/numbers.webp" alt="Programming Image" title="Numbers WEBP" width="220" /></a>
+    <a href="blog1.html"><h3>Blog 1: The Uncomfortable Truth About Programming</h3></a>
+    <h4>Having big dreams feels amazing until the road gets rocky.</h4>
+  </div>
+
+  <!-- BLOG CARD 2 -->
+  <div class="blog-card">
+    <a href="images/index/music.jpg" target="winImage"><img src="images/index/music.jpg" alt="Music Image" title="Music PNG" width="220" /></a>
+    <a href="blog2.html"><h3>Blog 2: Why Guitar Has Good Parenting Skills</h3></a>
+    <h4>Aside from humans and animals, a guitar is a reliable companion.</h4>
+  </div>
+
+  <!-- BLOG CARD 3 -->
+  <div class="blog-card">
+    <a href="images/index/scientist.jpg" target="winImage"><img src="images/index/scientist.jpg" alt="Scientist Image" title="Scientist JPG"width="220" /></a>
+    <a href="blog3.html"><h3>Blog 3: Why Technology Is More Human Than We Think</h3></a>
+    <h4>Life has a funny way of showing you purpose when you least expect it.</h4>
+  </div>
+</div>
+
+<br>
+
+<div class="button-row">
+      <a href="#bottom" class="jump-to-bottom-page">Go to Bottom</a>
+      <a href="#top" class="back-to-top-page">Go Back to Top</a>
+    </div>
+
+    <br>
 
     <div style="text-align: center; margin: 20px 0">
       <img
         src="images/index/border.png"
         alt="Border"
-        title="Border Image"
-        width="600px"
+        title="Border PNG"
+        width="600px;"
       />
     </div>
-    <br />
-    <h2 id="pages" id="blogs">Explore My Works</h2>
-    <h4>It's the perfect time to use your free time.</h4>
+
+
+<br>
+<br>
+    <h2 id="part3">More Personal Works</h2>
+    <h4>These works contain a piece of my experiences and perspectives. Have a read!</h4>
 
     <div class="blog-cards-container" style="display: flex; justify-content: center; gap: 20px; margin: 30px 0; flex-wrap: nowrap;">
   <!-- BLOG CARD 1 -->
-  <div class="blog-card" style="width: 260px; background-color: white; border: 1px solid #e1cead; padding: 20px; text-align: center;">
-    <a href="images/index/numbers.webp" target="_self"><img src="images/index/numbers.webp" alt="Programming Image" title="Numbers WEBP" width="220" /></a>
-    <a href="blog1.html"><h3>Blog 1: The Uncomfortable Truth About Programming</h3></a>
-    <h4>Having big dreams feels amazing until the road gets rocky...</h4>
-  </div>
+        <div class="blog-card">
+            <a href="images/about me/nostalgia.jpg" target="winImage"><img src="images/about me/nostalgia.jpg" alt="Nostalgia JPG" title="Nostalgia JPG" width="220" /></a>
+            <a href="biography.html"><h3>Biography</h3></a>
+            <h4>This is my life story. Read at your own time.</h4>
+        </div>
 
-  <!-- BLOG CARD 2 -->
-  <div class="blog-card" style="width: 260px; background-color: white; border: 1px solid #e1cead; padding: 20px; text-align: center;">
-    <a href="images/index/music.jpg" target="_self"><img src="images/index/music.jpg" alt="Music Image" title="Music PNG" width="220" /></a>
-    <a href="blog2.html"><h3>Blog 2: Why Guitar Has Good Parenting Skills</h3></a>
-    <h4>Humans make meaning out of everything. I made a bestfriend out of my guitar.</h4>
-  </div>
+        <!-- BLOG CARD 2 -->
+        <div class="blog-card">
+            <a href="images/added/woman.png" target="winImage"><img src="images/added/woman.png" alt="Woman Reading Image" title="Woman Reading Image" width="220" /></a>
+            <a href="interests.html"><h3>How Music Speaks What Words Cannot</h3></a>
+            <h4>Everything you can love about music is written here.</h4>
+        </div>
 
-  <!-- BLOG CARD 3 -->
-  <div class="blog-card" style="width: 260px; background-color: white; border: 1px solid #e1cead; padding: 20px; text-align: center;">
-    <a href="images/index/scientist.jpg" target="_self"><img src="images/index/scientist.jpg" alt="Scientist Image" title="Scientist JPG"width="220" /></a>
-    <a href="blog3.html"><h3>Blog 3: Why Technology Is More Human Than We Think</h3></a>
-    <h4>Life has a funny way of showing you purpose when you least expect it.</h4>
-  </div>
+        <div class="blog-card">
+            <a href="images/interest/sheet.avif" target="winImage"><img src="images/interest/sheet.avif" alt="Sheet Music Image" title="Sheet Music Image" width="220" /></a>
+            <a href="interests.html"><h3>How Music Speaks What Words Cannot</h3></a>
+            <h4>Everything you can love about music is written here.</h4>
+        </div>
+
+         <div class="blog-card">
+            <a href="images/added/globe.avif" target="winImage"><img src="images/added/globe.avif" alt="Globe Image" title="Globe Image" width="220" /></a>
+            <a href="places.html"><h3>My Dream Places</h3></a>
+            <h4>Have a mini tour around the most surreal places in the world.</h4>
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="button-row">
+      <a href="#bottom" class="jump-to-bottom-page">Go to Bottom</a>
+      <a href="#top" class="back-to-top-page">Go Back to Top</a>
+    </div>
+
+
+     <div style="text-align: center; margin: 20px 0">
+      <img
+        src="images/index/border.png"
+        alt="Border"
+        title="Border PNG"
+        width="600px;"
+      />
+    </div>
+
+    <br>
+
+    <h2 id="part4">Formally learn more about me</h2>
+    <h4>Ready to work with you anytime.</h4>
+
+    <div class="blog-cards-container" style="display: flex; justify-content: center; gap: 20px; margin: 30px 0; flex-wrap: nowrap;">
+  <!-- BLOG CARD 1 -->
+        <div class="blog-card">
+            <a href="images/added/book.png" target="winImage"><img src="images/added/book.png" alt="Book Image" title="Book Image" width="220" /></a>
+            <h3>Education</h3>
+            <h4><b>Elementary:</b> Pag-Asa Institute of Cavite</h4>
+            <h4><b>Highschool:</b> San Sebastian College Recoletos de Cavite</h4>
+            <h4><b>College:</b> University of the East, Manila</h4>
+        </div>
+
+
+        <div class="blog-card" style="width: 260px; background-color: white; border: 1px solid #e1cead; padding: 20px; text-align: center; border-radius: 8px;">
+    <a href="images/added/hammer.png" target="winImage">
+        <img src="images/added/hammer.png" alt="Hammer Image" title="Hammer Image" width="220" />
+    </a>
+    <h3>Skills</h3>
+    <h4 style="display: inline-block; border: 1px solid #e1cead; padding: 5px 12px; border-radius: 50px; background-color: white; margin: 5px; font-weight: normal;">Python</h4>
+    <h4 style="display: inline-block; border: 1px solid #e1cead; padding: 5px 12px; border-radius: 50px; background-color: white; margin: 5px; font-weight: normal;">Java</h4>
+    <h4 style="display: inline-block; border: 1px solid #e1cead; padding: 5px 12px; border-radius: 50px; background-color: white; margin: 5px; font-weight: normal;">C++</h4>
 </div>
-  
+
+<div class="blog-card" style="width: 260px; background-color: white; border: 1px solid #e1cead; padding: 20px; text-align: center; border-radius: 8px;">
+    <a href="images/blog3/telescopes.png" target="winImage">
+        <img src="images/blog3/telescopes.png" alt="Telescope Image" title="Telescope Image" width="220" />
+    </a>
+    <h3>Traits</h3>
+    <h4 style="display: inline-block; border: 1px solid #e1cead; padding: 5px 12px; border-radius: 50px; background-color: white; margin: 5px; font-weight: normal;">Collaborative</h4>
+    <h4 style="display: inline-block; border: 1px solid #e1cead; padding: 5px 12px; border-radius: 50px; background-color: white; margin: 5px; font-weight: normal;">Team-Oriented</h4>
+    <h4 style="display: inline-block; border: 1px solid #e1cead; padding: 5px 12px; border-radius: 50px; background-color: white; margin: 5px; font-weight: normal;">Open to Feedback</h4>
+    <h4 style="display: inline-block; border: 1px solid #e1cead; padding: 5px 12px; border-radius: 50px; background-color: white; margin: 5px; font-weight: normal;">Strong Interpersonal Skills</h4>
+</div>
+    </div>
+
 
 <div
       class="blog-links"
       id="pages"
-      style="text-align: center; margin: 40px 0"
-    >
-      <h3>Navigate:</h3>
+      style="text-align: center; margin: 40px 0">
+      <h3 id="bottom">Navigate:</h3>
       <a href="index.html">Home</a>&nbsp;&nbsp;
       <a href="index.html#pages">Blogs</a>&nbsp;&nbsp;
-      <a href="media.html">Media</a>
+      <a href="media.html">Media</a>&nbsp;&nbsp;
+      <a href="interests.html">Interest</a>
     </div>
 
 
 <div style="text-align: center">
         <a href="#top" class="back-to-top">Go back to the top</a>
       </div>
-    </div>
+</div>
     <footer
       style="
         background-color: #e1cead;
@@ -177,4 +420,3 @@
     </footer>
   </body>
 </html>
-
