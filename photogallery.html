@@ -75,7 +75,8 @@
         font-weight: bold;
       }
 
-      .back-to-top, .jump-to-bottom {
+      .back-to-top,
+      .jump-to-bottom {
         text-decoration: none;
         font-weight: bold;
         color: black;
@@ -86,7 +87,33 @@
         margin: 20px 0;
       }
 
+      .jump-to-bottom-gallery {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e1cead;
+        border-radius: 5px;
+        padding: 10px 20px;
+        display: inline-block;
+        margin: 20px 0;
+        margin-left: 250px;
+      }
+
       /* TEST */
+
+      .back-to-top-gallery {
+        display: inline-block;
+        margin: 20px 0;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e1cead;
+        border-radius: 5px;
+        padding: 10px 20px;
+
+        margin-left: 610px; /* keep your positioning */
+        margin-right: 250px;
+      }
 
       .back-to-top-blog {
         display: inline-block;
@@ -110,10 +137,14 @@
         text-decoration: none;
         color: black;
         font-weight: bold;
-        font-size: 18px; /* looks like h3 */
+        font-size: 18px;
         font-family: Georgia, "Times New Roman", Times, serif;
       }
 
+      a.font {
+        font-family:
+          "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
       /* */
 
       footer {
@@ -139,29 +170,31 @@
 
       /* TEST */
       .button-row {
-              display: flex;
-              justify-content: space-between; /* one left, one right */
-              align-items: center; /* same vertical level */
-              margin: 20px 0;
-            }
-      
+        display: flex;
+        justify-content: space-between; /* one left, one right */
+        align-items: center; /* same vertical level */
+        margin: 20px 0;
+      }
     </style>
   </head>
 
   <body>
     <div id="top"></div>
 
-    <br>
-    <br>
     <!-- HEADER -->
     <div class="header">
       <img src="images/index/PennyWrinkleLogo.png" height="50" alt="Logo" />
+
       <div>
         <a href="index.html">Home</a>
         <a href="contact.html">Contact</a>
         <a href="biography.html">About Me</a>
         <a href="#pages">Pages</a>
+        <a href="index.html#pages">Blogs</a>
         <a href="photogallery.html">Gallery</a>
+        <a href="media.html">Media</a>
+        <a href="places.html">Collage</a>
+        <a href="interests.html">Interest</a>
       </div>
     </div>
 
@@ -171,19 +204,25 @@
     <h1>Photo Gallery</h1>
     <h4>Where pieces make a whole.</h4>
 
-      <h2>Categories:</h2>
-      <div class="categories">
-        <a href="#part1">Part 1</a>
-        <a href="#part2">Part 2</a>
-        <a href="#part3">Part 3</a>
-        <a href="#part4">Part 4</a>
-        <a href="#part5">Part 5</a>
-      </div>
-      <br />
-      <a href="#bottom" class="jump-to-bottom">Jump to the Bottom</a>
-      <br />
-      <nr></nr>
-      <br />
+    <br />
+    <br />
+
+    <h2>Categories:</h2>
+    <br />
+    <div class="categories">
+      <a href="#part1">Part 1</a>
+      <a href="#part2">Part 2</a>
+      <a href="#part3">Part 3</a>
+      <a href="#part4">Part 4</a>
+      <a href="#part5">Part 5</a>
+      <a href="#part6">Part 6</a>
+    </div>
+    <br />
+    <br />
+    <a href="#bottom" class="jump-to-bottom">Jump to the Bottom</a>
+    <br />
+    <nr></nr>
+    <br />
 
     <div class="divider">
       <img src="images/index/border.png" width="600" alt="Divider" />
@@ -193,30 +232,33 @@
     <a href="index.html"><h2 id="part1">Soul Pen Landing Page</h2></a>
     <h4>Welcome.</h4>
 
-
     <div class="blog-cards-container">
       <div class="blog-card">
-        <a href="index/swan.jpg">
-          <img src="index/swan.jpg" alt="Swan" title="Swan JPG" />
+        <a href="images/index/swan.jpg" target="winImage">
+          <img src="images/index/swan.jpg" alt="Swan" title="Swan JPG" />
           <h3>White Swan</h3>
         </a>
       </div>
-      <div class="blog-card">
-        <a href="index/numbers.webp">
-          <img src="index/numbers.webp" alt="Binary" title="Binary WEBP" />
+      <div class="blog-card" target="winImage">
+        <a href="images/index/numbers.webp">
+          <img
+            src="images/index/numbers.webp"
+            alt="Binary"
+            title="Binary WEBP"
+          />
           <h3>Binary</h3>
         </a>
       </div>
       <div class="blog-card">
-        <a href="index/music.jpg">
-          <img src="index/music.jpg" alt="Music" title="Music JPG" />
+        <a href="images/index/music.jpg" target="winImage">
+          <img src="images/index/music.jpg" alt="Music" title="Music JPG" />
           <h3>Music</h3>
         </a>
       </div>
       <div class="blog-card">
-        <a href="index/scientist.jpg">
+        <a href="images/index/scientist.jpg" target="winImage">
           <img
-            src="index/scientist.jpg"
+            src="images/index/scientist.jpg"
             alt="Scientist"
             title="Scientist PNG"
           />
@@ -224,9 +266,9 @@
         </a>
       </div>
       <div class="blog-card">
-        <a href="index/blackSwan.jpg">
+        <a href="images/index/blackSwan.jpg" target="winImage">
           <img
-            src="index/blackSwan.jpg"
+            src="images/index/blackSwan.jpg"
             alt="Black Swan"
             title="Black Swan PNG"
           />
@@ -236,10 +278,10 @@
     </div>
 
     <!--TEST-->
-     <div class="button-row">
-        <a href="#bottom" class="jump-to-bottom">Go to Bottom</a>
-        <a href="#top" class="back-to-top-blog">Go Back to Top</a>
-      </div>
+    <div class="button-row">
+      <a href="#bottom" class="jump-to-bottom-gallery">Go to Bottom</a>
+      <a href="#top" class="back-to-top-gallery">Go Back to Top</a>
+    </div>
 
     <div class="divider">
       <img src="images/index/border.png" width="600" alt="Divider" />
@@ -253,9 +295,9 @@
 
     <div class="blog-cards-container">
       <div class="blog-card">
-        <a href="blog1/graduation.jpg">
+        <a href="images/blog1/graduation.jpg" target="winImage">
           <img
-            src="blog1/graduation.jpg"
+            src="images/blog1/graduation.jpg"
             alt="Graduation"
             title="Graduation PNG"
           />
@@ -263,21 +305,21 @@
         </a>
       </div>
       <div class="blog-card">
-        <a href="blog1/gear.jpg">
-          <img src="blog1/gear.jpg" alt="Gear" title="Gear JPG" />
+        <a href="images/blog1/gear.jpg" target="winImage">
+          <img src="images/blog1/gear.jpg" alt="Gear" title="Gear JPG" />
           <h3>Gear</h3>
         </a>
       </div>
       <div class="blog-card">
-        <a href="blog1/Laptop.png">
-          <img src="blog1/Laptop.png" alt="Laptop" title="Laptop PNG" />
+        <a href="images/blog1/Laptop.png" target="winImage">
+          <img src="images/blog1/Laptop.png" alt="Laptop" title="Laptop PNG" />
           <h3>Laptop</h3>
         </a>
       </div>
       <div class="blog-card">
-        <a href="blog1/program.jpg">
+        <a href="images/blog1/program.jpg">
           <img
-            src="blog1/program.jpg"
+            src="images/blog1/program.jpg"
             alt="Programming"
             title="Programming JPG"
           />
@@ -285,8 +327,8 @@
         </a>
       </div>
       <div class="blog-card">
-        <a href="blog1/time.jpg">
-          <img src="blog1/time.jpg" alt="Time" title="Time JPG" />
+        <a href="images/blog1/time.jpg" target="winImage">
+          <img src="images/blog1/time.jpg" alt="Time" title="Time JPG" />
           <h3>Time</h3>
         </a>
       </div>
@@ -294,9 +336,9 @@
 
     <!--TEST-->
     <div class="button-row">
-        <a href="#bottom" class="jump-to-bottom">Go to Bottom</a>
-        <a href="#top" class="back-to-top-blog">Go Back to Top</a>
-      </div>
+      <a href="#bottom" class="jump-to-bottom-gallery">Go to Bottom</a>
+      <a href="#top" class="back-to-top-gallery">Go Back to Top</a>
+    </div>
 
     <div class="divider">
       <img src="images/index/border.png" width="600" alt="Divider" />
@@ -304,21 +346,25 @@
 
     <!-- BLOG 2 -->
     <a href="blog2.html"
-      ><h2 id=part3>Blog 2: Why Guitar Has Good Parenting Skills</h2></a
+      ><h2 id="part3">Blog 2: Why Guitar Has Good Parenting Skills</h2></a
     >
     <h4>What are the things that keep you going?</h4>
 
     <div class="blog-cards-container">
       <div class="blog-card">
-        <a href="blog2/guitar.jpg">
-          <img src="blog2/guitar.jpg" alt="Guitar Image" title="Guitar PNG" />
+        <a href="images/blog2/guitar.jpg" target="winImage">
+          <img
+            src="images/blog2/guitar.jpg"
+            alt="Guitar Image"
+            title="Guitar PNG"
+          />
           <h3>Guitar</h3>
         </a>
       </div>
       <div class="blog-card">
-        <a href="blog2/guitarBG.png">
+        <a href="images/blog2/guitarBG.png" target="winImage">
           <img
-            src="blog2/guitarBG.png"
+            src="images/blog2/guitarBG.png"
             alt="Guitar Background"
             title="Guitar BG PNG"
           />
@@ -326,9 +372,9 @@
         </a>
       </div>
       <div class="blog-card">
-        <a href="blog2/passion.webp">
+        <a href="images/blog2/passion.webp" target="winImage">
           <img
-            src="blog2/passion.webp"
+            src="images/blog2/passion.webp"
             alt="Passion Image"
             title="Passion PNG"
           />
@@ -336,9 +382,9 @@
         </a>
       </div>
       <div class="blog-card">
-        <a href="blog2/students.jpg">
+        <a href="images/blog2/students.jpg" target="winImage">
           <img
-            src="blog2/students.jpg"
+            src="images/blog2/students.jpg"
             alt="Students Image"
             title="Students JPG"
           />
@@ -346,21 +392,24 @@
         </a>
       </div>
       <div class="blog-card">
-        <a href="blog2/school.jpg">
-          <img src="blog2/school.jpg" alt="School Image" title="School PNG" />
+        <a href="images/blog2/school.jpg" target="winImage">
+          <img
+            src="images/blog2/school.jpg"
+            alt="School Image"
+            title="School PNG"
+          />
           <h3>Second Home</h3>
         </a>
       </div>
     </div>
 
-    
     <!--TEST-->
     <div class="button-row">
-        <a href="#bottom" class="jump-to-bottom">Go to Bottom</a>
-        <a href="#top" class="back-to-top-blog">Go Back to Top</a>
-      </div>
+      <a href="#bottom" class="jump-to-bottom-gallery">Go to Bottom</a>
+      <a href="#top" class="back-to-top-gallery">Go Back to Top</a>
+    </div>
 
-      <br /><br />
+    <br /><br />
 
     <div class="divider">
       <img src="images/index/border.png" width="600" alt="Divider" />
@@ -373,9 +422,9 @@
 
     <div class="blog-cards-container">
       <div class="blog-card">
-        <a href="blog3/sheldon.jpg">
+        <a href="images/blog3/sheldon.jpg" target="winImage">
           <img
-            src="blog3/sheldon.jpg"
+            src="images/blog3/sheldon.jpg"
             alt="Sheldon Image"
             title="Sheldon JPG"
           />
@@ -383,9 +432,9 @@
         </a>
       </div>
       <div class="blog-card">
-        <a href="blog3/telescopes.png">
+        <a href="images/blog3/telescopes.png" target="winImage">
           <img
-            src="blog3/telescopes.png"
+            src="images/blog3/telescopes.png"
             alt="Telescopes"
             title="Telescopes PNG"
           />
@@ -393,15 +442,19 @@
         </a>
       </div>
       <div class="blog-card">
-        <a href="blog3/woman.jpg">
-          <img src="blog3/woman.jpg" alt="Woman Image" title="Woman JPG" />
+        <a href="images/blog3/woman.jpg" target="winImage">
+          <img
+            src="images/blog3/woman.jpg"
+            alt="Woman Image"
+            title="Woman JPG"
+          />
           <h3>Lady</h3>
         </a>
       </div>
       <div class="blog-card">
-        <a href="blog3/praying.avif">
+        <a href="images/blog3/praying.avif" target="winImage">
           <img
-            src="blog3/praying.avif"
+            src="images/blog3/praying.avif"
             alt="Praying Image"
             title="Praying AVIF"
           />
@@ -409,9 +462,9 @@
         </a>
       </div>
       <div class="blog-card">
-        <a href="blog3/spaceship.jpg">
+        <a href="images/blog3/spaceship.jpg" target="winImage">
           <img
-            src="blog3/spaceship.jpg"
+            src="images/blog3/spaceship.jpg"
             alt="Spaceship"
             title="Spaceship PNG"
           />
@@ -420,12 +473,11 @@
       </div>
     </div>
 
-    
     <!--TEST-->
-     <div class="button-row">
-        <a href="#bottom" class="jump-to-bottom">Go to Bottom</a>
-        <a href="#top" class="back-to-top-blog">Go Back to Top</a>
-      </div>
+    <div class="button-row">
+      <a href="#bottom" class="jump-to-bottom-gallery">Go to Bottom</a>
+      <a href="#top" class="back-to-top-gallery">Go Back to Top</a>
+    </div>
 
     <div class="divider">
       <img src="images/index/border.png" width="600" alt="Divider" />
@@ -436,9 +488,9 @@
 
     <div class="blog-cards-container">
       <div class="blog-card">
-        <a href="about me/nostalgia.jpg">
+        <a href="images/about me/nostalgia.jpg" target="winImage">
           <img
-            src="about me/nostalgia.jpg"
+            src="images/about me/nostalgia.jpg"
             alt="Nostalgia"
             title="Nostalgia PNG"
           />
@@ -446,9 +498,9 @@
         </a>
       </div>
       <div class="blog-card">
-        <a href="about me/childhood.jpg">
+        <a href="images/about me/childhood.jpg" target="winImage">
           <img
-            src="about me/childhood.jpg"
+            src="images/about me/childhood.jpg"
             alt="Childhood Years"
             title="Childhood JPG"
           />
@@ -456,9 +508,9 @@
         </a>
       </div>
       <div class="blog-card">
-        <a href="about me/teenage.jpg">
+        <a href="images/about me/teenage.jpg" target="winImage">
           <img
-            src="about me/teenage.jpg"
+            src="images/about me/teenage.jpg"
             alt="Teenage Years"
             title="Teenage JPG"
           />
@@ -466,9 +518,9 @@
         </a>
       </div>
       <div class="blog-card">
-        <a href="about me/college.jpg">
+        <a href="images/about me/college.jpg" target="winImage">
           <img
-            src="about me/college.jpg"
+            src="images/about me/college.jpg"
             alt="College Years"
             title="College JPG"
           />
@@ -476,9 +528,9 @@
         </a>
       </div>
       <div class="blog-card">
-        <a href="about me/elementary.jpg">
+        <a href="images/about me/elementary.jpg" target="winImage">
           <img
-            src="about me/elementary.jpg"
+            src="images/about me/elementary.jpg"
             alt="Elementary Image"
             title="Elementary PNG"
           />
@@ -487,25 +539,24 @@
       </div>
     </div>
 
-    
     <!--TEST-->
     <div class="button-row">
-        <a href="#bottom" class="jump-to-bottom">Go to Bottom</a>
-        <a href="#top" class="back-to-top-blog">Go Back to Top</a>
-      </div>
+      <a href="#bottom" class="jump-to-bottom-gallery">Go to Bottom</a>
+      <a href="#top" class="back-to-top-gallery">Go Back to Top</a>
+    </div>
 
     <div class="divider">
       <img src="images/index/border.png" width="600" alt="Divider" />
     </div>
     <!-- FAVORITES -->
-    <h2>Favorite Things</h2>
+    <h2 id="part6">Favorite Things</h2>
     <h4>What are yours?</h4>
 
     <div class="blog-cards-container">
       <div class="blog-card">
-        <a href="favorites/smart dogs.jpg">
+        <a href="images/favorites/smart dogs.jpg" target="winImage">
           <img
-            src="favorites/smart dogs.jpg"
+            src="images/favorites/smart dogs.jpg"
             alt="Smart Dogs"
             title="Smart Dogs"
           />
@@ -513,21 +564,25 @@
         </a>
       </div>
       <div class="blog-card">
-        <a href="favorites/guitaring.jpg">
-          <img src="favorites/guitaring.jpg" alt="Guitar" title="Guitar JPG" />
+        <a href="images/favorites/guitaring.jpg" target="winImage">
+          <img
+            src="images/favorites/guitaring.jpg"
+            alt="Guitar"
+            title="Guitar JPG"
+          />
           <h3>Guitar</h3>
         </a>
       </div>
       <div class="blog-card">
-        <a href="favorites/piano.jpg">
-          <img src="favorites/piano.jpg" alt="Piano" title="Piano JPG" />
+        <a href="images/favorites/piano.jpg" target="winImage">
+          <img src="images/favorites/piano.jpg" alt="Piano" title="Piano JPG" />
           <h3>Piano</h3>
         </a>
       </div>
       <div class="blog-card">
-        <a href="favorites/lovedOnes.jpg">
+        <a href="images/favorites/lovedOnes.jpg">
           <img
-            src="favorites/lovedOnes.jpg"
+            src="images/favorites/lovedOnes.jpg"
             alt="Loved Ones"
             title="Loved Ones JPG"
           />
@@ -535,15 +590,15 @@
         </a>
       </div>
       <div class="blog-card">
-        <a href="favorites/food.jpg">
-          <img src="favorites/food.jpg" alt="Food" title="Food JPG" />
+        <a href="images/favorites/food.jpg" target="winImage">
+          <img src="images/favorites/food.jpg" alt="Food" title="Food JPG" />
           <h3>Food</h3>
         </a>
       </div>
     </div>
 
-    <br>
-    <br>
+    <br />
+    <br />
     <!-- NAVIGATION -->
     <div class="blog-links" id="pages">
       <h3 id="bottom">Navigate:</h3>
@@ -564,8 +619,3 @@
     </footer>
   </body>
 </html>
-
-
-
-
-
